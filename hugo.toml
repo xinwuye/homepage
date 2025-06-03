@@ -1,6 +1,6 @@
 baseURL = "https://xinwuye.github.io/homepage" # Updated without trailing slash
 languageCode = "en-us"
-title = "Your Name - PhD Student" # Change this to your name and title
+title = "Your Name - PhD Student"
 theme = "hugo-profile"
 
 [outputs]
@@ -14,32 +14,26 @@ enableRobotsTXT = true
     [markup.goldmark.renderer]
       unsafe = true
 
-# Theme-specific parameters (Hugo Profile theme)
+# Theme-specific parameters
 [params]
-  # Meta
-  title = "Your Name - PhD Student" # Page title
-  author = "Your Name" # Change this
-  description = "Personal homepage of Your Name, AI PhD Student." # Change this
-  favicon = "favicon.ico" # You can create this file and put it in `static/`
+  title = "Your Name - PhD Student"
+  author = "Your Name"
+  description = "Personal homepage of Your Name, AI PhD Student."
   
-  # Whether the fade animations on the home page will be enabled
-  animate = true
+  # Disable animations for cleaner look
+  animate = false
 
-  # Navbar configuration
+  # Simple navbar configuration
   [params.navbar]
-    align = "ms-auto" # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
-    brandName = "Your Name" # Brand name for the brand | default is the title variable
-    disableSearch = false
-    
+    align = "ms-auto"
+    brandName = "Your Name"
+    disableSearch = true
     [params.navbar.stickyNavBar]
       enable = true
       showOnScrollUp = true
-    
-    enableSeparator = false
-    
     [params.navbar.menus]
-      disableAbout = false
-      disableExperience = false
+      disableAbout = true # Disable About section
+      disableExperience = true
       disableEducation = false
       disableProjects = false
       disableAchievements = true
@@ -48,11 +42,11 @@ enableRobotsTXT = true
   # Profile section
   [params.profile]
     enable = true
-    name = "Your Name" # Change this
-    tagline = "AI PhD Student at [Your University]" # Change this
-    image = "/images/profile.jpg" # Path to profile image
+    name = "Your Name"
+    tagline = "AI PhD Student at [Your University]"
+    image = "/images/profile.jpg"
 
-  # Hero section (top section of homepage)
+  # Hero section
   [params.hero]
     enable = true
     intro = "Hello, I'm"
@@ -63,43 +57,9 @@ enableRobotsTXT = true
     [params.hero.button]
       enable = false
 
-  # About section
+  # About section (disabled)
   [params.about]
-    enable = true
-    title = "About Me"
-    content = """
-    This is my introductory paragraph. I am an AI PhD student at [Your University],
-    focusing on [Your Research Area]. My interests span across machine learning,
-    deep learning, and their applications to solve real-world problems.
-    I am passionate about developing innovative AI solutions.
-    """
-
-  # Experience section
-  [params.experience]
     enable = false
-    # Uncomment and fill in if you want to add experience
-
-  # Education section
-  [params.education]
-    enable = true
-    # title = "Education" # Default is "Education"
-    [[params.education.items]]
-      title = "PhD in Artificial Intelligence"
-      date = "Expected 202X"
-      school = { name = "Your University", url = "" }
-      content = "City, Country"
-        
-    [[params.education.items]]
-      title = "MSc in Computer Science"
-      date = "Year"
-      school = { name = "Previous University", url = "" }
-      content = "City, Country"
-        
-    [[params.education.items]]
-      title = "BSc in Another Field"
-      date = "Year"
-      school = { name = "Undergraduate University", url = "" }
-      content = "City, Country"
 
   # Publications section (using Projects format)
   [params.projects]
@@ -126,23 +86,85 @@ enableRobotsTXT = true
         name = "PDF"
         link = "#"
 
-  # Contact section
-  [params.contact]
-    enable = false
-    # Uncomment and fill in if you want to add contact form
+  # Preprints section (using custom projects format)
+  [params.achievements]
+    enable = true
+    title = "Preprints"
+    [[params.achievements.items]]
+      title = "Exciting New Preprint Title"
+      content = "**Your Name**, Collaborator, C. (2025). *Exciting New Preprint Title*. arXiv:XXXX.XXXXX."
+      image = "/images/placeholder.jpg"
+      url = "#"
+      
+    [[params.achievements.items]]
+      title = "Preliminary Work on Topic Y"
+      content = "Smith, A., **Your Name**. (2024). *Preliminary Work on Topic Y*."
+      image = "/images/placeholder.jpg"
+      url = "#"
 
-  # Social links
-  [[params.socialIcons]]
-  name = "Google Scholar"
-  icon = "fas fa-graduation-cap"
-  url = "https://scholar.google.com/citations?user=YOUR_USER_ID"
+  # Education section
+  [params.education]
+    enable = true
+    title = "Education"
+    [[params.education.items]]
+      title = "PhD in Artificial Intelligence"
+      date = "Expected 202X"
+      school = { name = "Your University", url = "" }
+      content = "City, Country"
+        
+    [[params.education.items]]
+      title = "MSc in Computer Science"
+      date = "Year"
+      school = { name = "Previous University", url = "" }
+      content = "City, Country"
+        
+    [[params.education.items]]
+      title = "BSc in Another Field"
+      date = "Year"
+      school = { name = "Undergraduate University", url = "" }
+      content = "City, Country"
 
-  [[params.socialIcons]]
-  name = "GitHub"
-  icon = "fab fa-github"
-  url = "https://github.com/YOUR_GITHUB_USERNAME"
-
-  [[params.socialIcons]]
-  name = "LinkedIn"
-  icon = "fab fa-linkedin-in"
-  url = "https://linkedin.com/in/YOUR_LINKEDIN_PROFILE"
+# Custom CSS to simplify the design
+[params.customCSS]
+  enable = true
+  css = ["""
+    /* Simplify the overall look */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    
+    /* Make container narrower for better readability */
+    .container {
+      max-width: 800px !important;
+    }
+    
+    /* Hide footer */
+    footer {
+      display: none !important;
+    }
+    
+    /* Simplify cards */
+    .card {
+      box-shadow: none !important;
+      border: 1px solid #eee !important;
+    }
+    
+    /* Better typography */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: 600;
+    }
+    
+    /* Remove animations */
+    .animate__animated {
+      animation-duration: 0s !important;
+      opacity: 1 !important;
+    }
+    
+    /* Make profile simpler */
+    #profile {
+      padding: 2rem 0;
+    }
+  """]
