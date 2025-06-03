@@ -1,4 +1,4 @@
-baseURL = "https://xinwuye.github.io/homepage/" # Updated with correct GitHub username and repo name
+baseURL = "https://xinwuye.github.io/homepage" # Updated without trailing slash
 languageCode = "en-us"
 title = "Your Name - PhD Student" # Change this to your name and title
 theme = "hugo-profile"
@@ -6,6 +6,8 @@ theme = "hugo-profile"
 [outputs]
   home = ["HTML", "RSS", "JSON"]
   page = ["HTML", "RSS"]
+
+enableRobotsTXT = true
 
 [markup]
   [markup.goldmark]
@@ -15,12 +17,33 @@ theme = "hugo-profile"
 # Theme-specific parameters (Hugo Profile theme)
 [params]
   # Meta
+  title = "Your Name - PhD Student" # Page title
   author = "Your Name" # Change this
   description = "Personal homepage of Your Name, AI PhD Student." # Change this
   favicon = "favicon.ico" # You can create this file and put it in `static/`
   
   # Whether the fade animations on the home page will be enabled
   animate = true
+
+  # Navbar configuration
+  [params.navbar]
+    align = "ms-auto" # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    brandName = "Your Name" # Brand name for the brand | default is the title variable
+    disableSearch = false
+    
+    [params.navbar.stickyNavBar]
+      enable = true
+      showOnScrollUp = true
+    
+    enableSeparator = false
+    
+    [params.navbar.menus]
+      disableAbout = false
+      disableExperience = false
+      disableEducation = false
+      disableProjects = false
+      disableAchievements = true
+      disableContact = true
 
   # Profile section
   [params.profile]
@@ -123,14 +146,3 @@ theme = "hugo-profile"
   name = "LinkedIn"
   icon = "fab fa-linkedin-in"
   url = "https://linkedin.com/in/YOUR_LINKEDIN_PROFILE"
-
-# Main Menu (Navigation - the theme usually generates this from sections_order.yaml)
-# If you need to override or add custom links:
-# [[menu.main]]
-#   name = "Home"
-#   url = "#profile" # Links to the top (profile section)
-#   weight = 1
-# [[menu.main]]
-#   name = "Publications"
-#   url = "#publications" # Example link to a section
-#   weight = 2
