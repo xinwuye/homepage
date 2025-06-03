@@ -1,0 +1,10 @@
+# This controls the order of sections on the page and in the navigation.
+# The 'id' must match the 'id' in your data/sections/*.yaml files.
+# The theme should automatically create nav links like #about, #publications etc.
+- id: "about"
+# - id: "experience" # Example: if you had an experience.yaml
+- id: "publications"
+- id: "preprints"
+- id: "education"
+# - id: "skills"
+# - id: "contact" 

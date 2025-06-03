@@ -1,0 +1,19 @@
+# Hugo default output directory
+/public/
+/resources/_gen/
+
+# Hugo build lock file
+.hugo_build.lock
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Node modules if you use npm
+node_modules/
+
+# Local development
+.idea/
+.vscode/
+*.swp
+*.swo 

@@ -1,0 +1,36 @@
+baseURL = "https://YOUR_GITHUB_USERNAME.github.io/" # !!! IMPORTANT: Change this later
+languageCode = "en-us"
+title = "Your Name - PhD Student" # Change this to your name and title
+theme = "hugo-profile"
+
+# Theme-specific parameters (Hugo Profile theme)
+[params]
+  # Meta
+  author = "Your Name" # Change this
+  description = "Personal homepage of Your Name, AI PhD Student." # Change this
+  favicon = "favicon.ico" # You can create this file and put it in `static/`
+
+  # Profile section
+  [params.profile]
+    enable = true
+    name = "Your Name" # Change this
+    tagline = "AI PhD Student at [Your University]" # Change this
+    photo = "profile.jpg" # Add a 'profile.jpg' to your `static/images/` folder
+
+  # Your introductory paragraph will go into `data/sections/about.yaml` (see below)
+
+  # Social icons configuration will be in `data/social.yaml` (see below)
+
+  # Sections (we will define these in the `data/sections/` folder)
+  # The order in `sections` array in `data/sections_order.yaml` will determine the display order on the page and in the nav.
+
+# Main Menu (Navigation - the theme usually generates this from sections_order.yaml)
+# If you need to override or add custom links:
+# [[menu.main]]
+#   name = "Home"
+#   url = "#profile" # Links to the top (profile section)
+#   weight = 1
+# [[menu.main]]
+#   name = "Publications"
+#   url = "#publications" # Example link to a section
+#   weight = 2

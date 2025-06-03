@@ -1,0 +1,7 @@
+id: "publications"
+title: "Publications"
+content: |
+  - **Author, A.**, Author, B. (2024). *Title of Awesome Publication*. Journal/Conference Name. [Link to PDF](#) [Code](#)
+  - Doe, J., **Your Name**. (2023). *Another Interesting Paper*. Prestigious AI Venue. [Link to PDF](#)
+  --- # You can use Markdown horizontal rules for visual separation if desired
+  *More coming soon...* 

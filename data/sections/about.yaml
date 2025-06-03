@@ -1,0 +1,8 @@
+id: "about" # This ID will be used for the navigation link (#about)
+title: "About Me" # This will be the section title, you can choose to hide it with CSS if you only want the paragraph
+content: |  # Use `|` for multi-line content
+  This is my introductory paragraph. I am an AI PhD student at [Your University],
+  focusing on [Your Research Area]. My interests span across machine learning,
+  deep learning, and their applications to solve real-world problems.
+  I am passionate about developing innovative AI solutions.
+# You can hide the title on the page via custom CSS if you just want the paragraph under your profile 

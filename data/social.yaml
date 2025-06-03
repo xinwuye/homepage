@@ -1,0 +1,11 @@
+- name: "Google Scholar"
+  icon: "fas fa-graduation-cap" # Font Awesome icon class
+  url: "https://scholar.google.com/citations?user=YOUR_USER_ID" # Change this
+- name: "GitHub"
+  icon: "fab fa-github"
+  url: "https://github.com/YOUR_GITHUB_USERNAME" # Change this
+- name: "LinkedIn"
+  icon: "fab fa-linkedin-in"
+  url: "https://linkedin.com/in/YOUR_LINKEDIN_PROFILE" # Change this
+# Add more or remove as needed. Find icons at https://fontawesome.com/icons
+# The theme should include Font Awesome. 
