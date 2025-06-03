@@ -1,6 +1,6 @@
 baseURL = "https://xinwuye.github.io/homepage" # Updated without trailing slash
 languageCode = "en-us"
-title = "Your Name - PhD Student"
+title = "Xinwu Ye"
 theme = "hugo-profile"
 
 [outputs]
@@ -16,9 +16,9 @@ enableRobotsTXT = true
 
 # Theme-specific parameters
 [params]
-  title = "Your Name - PhD Student"
-  author = "Your Name"
-  description = "I am an AI PhD student at [Your University], focusing on [Your Research Area]. My interests span across machine learning, deep learning, and their applications to solve real-world problems. I am passionate about developing innovative AI solutions."
+  title = "Xinwu Ye"
+  author = "Xinwu Ye"
+  description = "I am a master's student at Fudan University. I earned my bachelor's degrees from Shanghai University of Finance and Economics. My research interests focus on solving scientific problems with deep learning, with particular emphasis on graph machine learning, large language models, and bioinformatics applications. \n\nEmail: yexw0403[at]foxmail[dot]com"
   
   # Disable animations for cleaner look
   animate = false
@@ -42,20 +42,8 @@ enableRobotsTXT = true
   # Profile section
   [params.profile]
     enable = true
-    name = "Your Name"
-    tagline = "AI PhD Student at [Your University]"
-    image = "/images/profile.jpg"
+    name = "Xinwu Ye"
 
-  # Hero section
-  [params.hero]
-    enable = true
-    intro = "Hello, I'm"
-    title = "Your Name"
-    subtitle = "AI PhD Student"
-    content = "I am an AI PhD student at [Your University], focusing on [Your Research Area]."
-    image = "/images/profile.jpg"
-    [params.hero.button]
-      enable = false
 
   # About section (disabled)
   [params.about]
@@ -65,64 +53,66 @@ enableRobotsTXT = true
   [params.projects]
     enable = true
     title = "Publications"
+    content = "* represents equal contribution and co-first authorship."
     [[params.projects.items]]
-      title = "Title of Awesome Publication"
-      content = "**Author, A.**, Author, B. (2024). *Title of Awesome Publication*. Journal/Conference Name."
-      badges = ["2024", "Journal/Conference Name"]
-      image = "/images/placeholder.jpg"
-      [params.projects.items.featured]
-        name = "PDF"
-        link = "#"
+      title = "MMSciBench: Benchmarking Language Models on Chinese Multimodal Scientific Problems"
+      content = "**Xinwu Ye**, Chengfan Li, Siming Chen, Wei Wei, Xiangru Tang. \n\n**ACL 2025 Findings**."
       [[params.projects.items.links]]
-        icon = "fas fa-code"
-        url = "#"
+        url = "https://arxiv.org/html/2503.01891v2"
+        name = "paper"
+      [[params.projects.items.links]]
+        url = "https://github.com/xinwuye/MMSciBench-code"
+        name = "code"
+      [[params.projects.items.links]]
+        url = "https://huggingface.co/datasets/XinwuYe/MMSciBench"
+        name = "data"
         
     [[params.projects.items]]
-      title = "Another Interesting Paper"
-      content = "Doe, J., **Your Name**. (2023). *Another Interesting Paper*. Prestigious AI Venue."
-      badges = ["2023", "Prestigious AI Venue"]
-      image = "/images/placeholder.jpg"
-      [params.projects.items.featured]
-        name = "PDF"
-        link = "#"
+      title = "GNNFairViz: Visual Analysis for Graph Neural Network Fairness"
+      content = "**Xinwu Ye**, Jielin Feng, Erasmo Purificato, Ludovico Boratto, Michael Kamp, Zengfeng Huang, Siming Chen. \n\n**IEEE Transactions on Visualization and Computer Graphics (2025)**."
+      [[params.projects.items.links]]
+        url = "https://ieeexplore.ieee.org/abstract/document/10891209"
+        name = "paper"
+      [[params.projects.items.links]]
+        url = "https://github.com/xinwuye/GNNFairViz"
+        name = "code"
+      [[params.projects.items.links]]
+        url = "https://youtu.be/Qe0UfbemQLI"
+        name = "video"
 
   # Preprints section (using custom projects format)
   [params.achievements]
     enable = true
     title = "Preprints"
+    content = "* represents equal contribution and co-first authorship."
     [[params.achievements.items]]
-      title = "Exciting New Preprint Title"
-      content = "**Your Name**, Collaborator, C. (2025). *Exciting New Preprint Title*. arXiv:XXXX.XXXXX."
-      image = "/images/placeholder.jpg"
-      url = "#"
-      
-    [[params.achievements.items]]
-      title = "Preliminary Work on Topic Y"
-      content = "Smith, A., **Your Name**. (2024). *Preliminary Work on Topic Y*."
-      image = "/images/placeholder.jpg"
-      url = "#"
+      title = "BC-Design: A Biochemistry-Aware Framework for Highly Accurate Inverse Protein Folding"
+      content = "Xiangru Tang*, **Xinwu Ye***, Fang Wu*, Daniel Shao, Yin Fang, Siming Chen, Dong Xu, Mark Gerstein. \n\nbioRxiv (2024)."
+      [[params.achievements.items.links]]
+        url = "https://www.biorxiv.org/content/10.1101/2024.10.28.620755v2"
+        name = "paper"
+      [[params.achievements.items.links]]
+        url = "https://github.com/gersteinlab/BC-Design"
+        name = "code"
+      [[params.achievements.items.links]]
+        url = "https://osf.io/pwbhg/files/osfstorage"
+        name = "data"
 
   # Education section
   [params.education]
     enable = true
     title = "Education"
     [[params.education.items]]
-      title = "PhD in Artificial Intelligence"
-      date = "Expected 202X"
-      school = { name = "Your University", url = "" }
-      content = "City, Country"
+      title = "Master of Science"
+      date = "2023-2025"
+      school = { name = "Fudan University" }
+      content = "Shanghai, China"
         
     [[params.education.items]]
-      title = "MSc in Computer Science"
-      date = "Year"
-      school = { name = "Previous University", url = "" }
-      content = "City, Country"
-        
-    [[params.education.items]]
-      title = "BSc in Another Field"
-      date = "Year"
-      school = { name = "Undergraduate University", url = "" }
-      content = "City, Country"
+      title = "Bachelor of Science & Bachelor of Engineering"
+      date = "2019-2023"
+      school = { name = "Shanghai University of Finance and Economics" }
+      content = "Shanghai, China"
 
 # Custom CSS to simplify the design
 [params.customCSS]
