@@ -3,26 +3,156 @@ languageCode = "en-us"
 title = "Your Name - PhD Student" # Change this to your name and title
 theme = "hugo-profile"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "RSS"]
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
 # Theme-specific parameters (Hugo Profile theme)
 [params]
   # Meta
   author = "Your Name" # Change this
   description = "Personal homepage of Your Name, AI PhD Student." # Change this
   favicon = "favicon.ico" # You can create this file and put it in `static/`
+  
+  # Whether the fade animations on the home page will be enabled
+  animate = true
 
   # Profile section
   [params.profile]
     enable = true
     name = "Your Name" # Change this
     tagline = "AI PhD Student at [Your University]" # Change this
-    photo = "profile.jpg" # Add a 'profile.jpg' to your `static/images/` folder
+    image = "/images/profile.jpg" # Path to profile image
 
-  # Your introductory paragraph will go into `data/sections/about.yaml` (see below)
+  # Hero section (top section of homepage)
+  [params.hero]
+    enable = true
+    intro = "Hello, I'm"
+    title = "Your Name"
+    subtitle = "AI PhD Student"
+    content = "I am an AI PhD student at [Your University], focusing on [Your Research Area]."
+    image = "/images/profile.jpg"
+    [params.hero.button]
+      enable = false
 
-  # Social icons configuration will be in `data/social.yaml` (see below)
+  # About section
+  [params.about]
+    enable = true
+    title = "About Me"
+    content = """
+    This is my introductory paragraph. I am an AI PhD student at [Your University],
+    focusing on [Your Research Area]. My interests span across machine learning,
+    deep learning, and their applications to solve real-world problems.
+    I am passionate about developing innovative AI solutions.
+    """
 
-  # Sections (we will define these in the `data/sections/` folder)
-  # The order in `sections` array in `data/sections_order.yaml` will determine the display order on the page and in the nav.
+  # Experience section
+  [params.experience]
+    enable = false
+    # Uncomment and fill in if you want to add experience
+
+  # Education section
+  [params.education]
+    enable = true
+    # title = "Education" # Default is "Education"
+    [[params.education.items]]
+      title = "PhD in Artificial Intelligence"
+      school = "Your University"
+      date = "Expected 202X"
+      content = "City, Country"
+        
+    [[params.education.items]]
+      title = "MSc in Computer Science"
+      school = "Previous University"
+      date = "Year"
+      content = "City, Country"
+        
+    [[params.education.items]]
+      title = "BSc in Another Field"
+      school = "Undergraduate University"
+      date = "Year"
+      content = "City, Country"
+
+  # Projects section
+  [params.projects]
+    enable = false
+    # Uncomment and fill in if you want to add projects
+
+  # Publications section (custom)
+  [params.publications]
+    enable = true
+    title = "Publications"
+    [[params.publications.items]]
+      title = "Title of Awesome Publication"
+      authors = "**Author, A.**, Author, B."
+      date = "2024"
+      journal = "Journal/Conference Name"
+      [[params.publications.items.links]]
+        name = "PDF"
+        url = "#"
+      [[params.publications.items.links]]
+        name = "Code"
+        url = "#"
+      
+    [[params.publications.items]]
+      title = "Another Interesting Paper"
+      authors = "Doe, J., **Your Name**"
+      date = "2023"
+      journal = "Prestigious AI Venue"
+      [[params.publications.items.links]]
+        name = "PDF"
+        url = "#"
+
+  # Preprints section (custom)
+  [params.preprints]
+    enable = true
+    title = "Preprints"
+    [[params.preprints.items]]
+      title = "Exciting New Preprint Title"
+      authors = "**Your Name**, Collaborator, C."
+      date = "2025"
+      journal = "arXiv:XXXX.XXXXX"
+      [[params.preprints.items.links]]
+        name = "arXiv"
+        url = "#"
+      [[params.preprints.items.links]]
+        name = "GitHub"
+        url = "#"
+      
+    [[params.preprints.items]]
+      title = "Preliminary Work on Topic Y"
+      authors = "Smith, A., **Your Name**"
+      date = "2024"
+      journal = ""
+      [[params.preprints.items.links]]
+        name = "PDF"
+        url = "#"
+
+  # Contact section
+  [params.contact]
+    enable = false
+    # Uncomment and fill in if you want to add contact form
+
+  # Social links
+  [[params.socialIcons]]
+  name = "Google Scholar"
+  icon = "fas fa-graduation-cap"
+  url = "https://scholar.google.com/citations?user=YOUR_USER_ID"
+
+  [[params.socialIcons]]
+  name = "GitHub"
+  icon = "fab fa-github"
+  url = "https://github.com/YOUR_GITHUB_USERNAME"
+
+  [[params.socialIcons]]
+  name = "LinkedIn"
+  icon = "fab fa-linkedin-in"
+  url = "https://linkedin.com/in/YOUR_LINKEDIN_PROFILE"
 
 # Main Menu (Navigation - the theme usually generates this from sections_order.yaml)
 # If you need to override or add custom links:
