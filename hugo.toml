@@ -1,4 +1,4 @@
-baseURL = "https://YOUR_GITHUB_USERNAME.github.io/" # !!! IMPORTANT: Change this later
+baseURL = "https://xinwuye.github.io/homepage/" # Updated with correct GitHub username and repo name
 languageCode = "en-us"
 title = "Your Name - PhD Student" # Change this to your name and title
 theme = "hugo-profile"
