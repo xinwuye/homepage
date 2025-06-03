@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Site.Title }}</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 8px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 25px;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin: 0 0 16px;
+        }
+        
+        a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        .publication, .preprint, .education-item {
+            margin-bottom: 25px;
+        }
+        
+        strong {
+            font-weight: 600;
+        }
+        
+        em {
+            font-style: italic;
+        }
+    </style>
+    {{ range .Site.Params.customCSS.css }}
+    <style>{{ . | safeCSS }}</style>
+    {{ end }}
+</head>
+<body>
+    <main>
+        <!-- Intro paragraph -->
+        <p>{{ .Site.Params.description | markdownify }}</p>
+
+        <!-- Publications section -->
+        <h2>Publications</h2>
+        {{ range .Site.Params.projects.items }}
+        <div class="publication">
+            <h3>{{ .title }}</h3>
+            <p>{{ .content | markdownify }}</p>
+            {{ if .featured }}
+            <p><a href="{{ .featured.link }}">{{ .featured.name }}</a></p>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <!-- Preprints section -->
+        <h2>Preprints</h2>
+        {{ range .Site.Params.achievements.items }}
+        <div class="preprint">
+            <h3>{{ .title }}</h3>
+            <p>{{ .content | markdownify }}</p>
+            {{ if .url }}
+            <p><a href="{{ .url }}">PDF</a></p>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <!-- Education section -->
+        <h2>Education</h2>
+        {{ range .Site.Params.education.items }}
+        <div class="education-item">
+            <h3>{{ .title }}</h3>
+            <p>{{ .school.name }}</p>
+            <p>{{ .date }} | {{ .content }}</p>
+        </div>
+        {{ end }}
+    </main>
+</body>
+</html> 
