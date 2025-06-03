@@ -13,6 +13,60 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 20px;
+            padding-top: 80px; /* Add space for fixed navbar */
+        }
+        
+        /* Navigation bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            height: 60px;
+            z-index: 1000;
+        }
+        
+        .navbar-container {
+            max-width: 800px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .navbar-brand {
+            font-size: 20px;
+            font-weight: 600;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .navbar-links a {
+            color: #555;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 5px 0;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        
+        .navbar-links a:hover {
+            color: #0366d6;
+            border-bottom: 2px solid #0366d6;
+            text-decoration: none;
         }
         
         h2 {
@@ -55,18 +109,38 @@
         em {
             font-style: italic;
         }
+
+        /* Sections with IDs for navigation */
+        #about, #publications, #preprints, #education {
+            scroll-margin-top: 70px; /* Ensures the section title is visible when scrolled to */
+        }
     </style>
     {{ range .Site.Params.customCSS.css }}
     <style>{{ . | safeCSS }}</style>
     {{ end }}
 </head>
 <body>
+    <!-- Navigation bar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">Xinwu Ye</a>
+            <div class="navbar-links">
+                <a href="#about">About</a>
+                <a href="#publications">Publications</a>
+                <a href="#preprints">Preprints</a>
+                <a href="#education">Education</a>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <!-- Intro paragraph -->
-        <p>{{ .Site.Params.description | markdownify }}</p>
+        <!-- Intro paragraph with about ID -->
+        <div id="about">
+            <p>{{ .Site.Params.description | markdownify }}</p>
+        </div>
 
         <!-- Publications section -->
-        <h2>Publications</h2>
+        <h2 id="publications">Publications</h2>
         {{ range .Site.Params.projects.items }}
         <div class="publication">
             <h3>{{ .title }}</h3>
@@ -78,7 +152,7 @@
         {{ end }}
 
         <!-- Preprints section -->
-        <h2>Preprints</h2>
+        <h2 id="preprints">Preprints</h2>
         {{ range .Site.Params.achievements.items }}
         <div class="preprint">
             <h3>{{ .title }}</h3>
@@ -90,7 +164,7 @@
         {{ end }}
 
         <!-- Education section -->
-        <h2>Education</h2>
+        <h2 id="education">Education</h2>
         {{ range .Site.Params.education.items }}
         <div class="education-item">
             <h3>{{ .title }}</h3>

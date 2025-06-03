@@ -18,7 +18,7 @@ enableRobotsTXT = true
 [params]
   title = "Your Name - PhD Student"
   author = "Your Name"
-  description = "Personal homepage of Your Name, AI PhD Student."
+  description = "I am an AI PhD student at [Your University], focusing on [Your Research Area]. My interests span across machine learning, deep learning, and their applications to solve real-world problems. I am passionate about developing innovative AI solutions."
   
   # Disable animations for cleaner look
   animate = false
