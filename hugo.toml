@@ -62,76 +62,46 @@ theme = "hugo-profile"
     # title = "Education" # Default is "Education"
     [[params.education.items]]
       title = "PhD in Artificial Intelligence"
-      school = "Your University"
       date = "Expected 202X"
+      school = { name = "Your University", url = "" }
       content = "City, Country"
         
     [[params.education.items]]
       title = "MSc in Computer Science"
-      school = "Previous University"
       date = "Year"
+      school = { name = "Previous University", url = "" }
       content = "City, Country"
         
     [[params.education.items]]
       title = "BSc in Another Field"
-      school = "Undergraduate University"
       date = "Year"
+      school = { name = "Undergraduate University", url = "" }
       content = "City, Country"
 
-  # Projects section
+  # Publications section (using Projects format)
   [params.projects]
-    enable = false
-    # Uncomment and fill in if you want to add projects
-
-  # Publications section (custom)
-  [params.publications]
     enable = true
     title = "Publications"
-    [[params.publications.items]]
+    [[params.projects.items]]
       title = "Title of Awesome Publication"
-      authors = "**Author, A.**, Author, B."
-      date = "2024"
-      journal = "Journal/Conference Name"
-      [[params.publications.items.links]]
+      content = "**Author, A.**, Author, B. (2024). *Title of Awesome Publication*. Journal/Conference Name."
+      badges = ["2024", "Journal/Conference Name"]
+      image = "/images/placeholder.jpg"
+      [params.projects.items.featured]
         name = "PDF"
+        link = "#"
+      [[params.projects.items.links]]
+        icon = "fas fa-code"
         url = "#"
-      [[params.publications.items.links]]
-        name = "Code"
-        url = "#"
-      
-    [[params.publications.items]]
+        
+    [[params.projects.items]]
       title = "Another Interesting Paper"
-      authors = "Doe, J., **Your Name**"
-      date = "2023"
-      journal = "Prestigious AI Venue"
-      [[params.publications.items.links]]
+      content = "Doe, J., **Your Name**. (2023). *Another Interesting Paper*. Prestigious AI Venue."
+      badges = ["2023", "Prestigious AI Venue"]
+      image = "/images/placeholder.jpg"
+      [params.projects.items.featured]
         name = "PDF"
-        url = "#"
-
-  # Preprints section (custom)
-  [params.preprints]
-    enable = true
-    title = "Preprints"
-    [[params.preprints.items]]
-      title = "Exciting New Preprint Title"
-      authors = "**Your Name**, Collaborator, C."
-      date = "2025"
-      journal = "arXiv:XXXX.XXXXX"
-      [[params.preprints.items.links]]
-        name = "arXiv"
-        url = "#"
-      [[params.preprints.items.links]]
-        name = "GitHub"
-        url = "#"
-      
-    [[params.preprints.items]]
-      title = "Preliminary Work on Topic Y"
-      authors = "Smith, A., **Your Name**"
-      date = "2024"
-      journal = ""
-      [[params.preprints.items.links]]
-        name = "PDF"
-        url = "#"
+        link = "#"
 
   # Contact section
   [params.contact]
