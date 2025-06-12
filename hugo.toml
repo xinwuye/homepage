@@ -94,22 +94,10 @@ enableRobotsTXT = true
         name = "video"
 
   # Preprints section (using custom projects format)
-  # [params.achievements]
-  #   enable = true
-  #   title = "Preprints"
-  #   content = "* represents equal contribution and co-first authorship."
-  #   [[params.achievements.items]]
-  #     title = "BC-Design: A Biochemistry-Aware Framework for Highly Accurate Inverse Protein Folding"
-  #     content = "Xiangru Tang*, **Xinwu Ye***, Fang Wu*, Daniel Shao, Yin Fang, Siming Chen, Dong Xu, Mark Gerstein. \n\nbioRxiv (2024)."
-  #     [[params.achievements.items.links]]
-  #       url = "https://www.biorxiv.org/content/10.1101/2024.10.28.620755v2"
-  #       name = "paper"
-  #     [[params.achievements.items.links]]
-  #       url = "https://github.com/gersteinlab/BC-Design"
-  #       name = "code"
-  #     [[params.achievements.items.links]]
-  #       url = "https://osf.io/pwbhg/files/osfstorage"
-  #       name = "data"
+  [params.achievements]
+    enable = true
+    title = "Preprints"
+    content = "* represents equal contribution and co-first authorship."
 
   # Education section
   [params.education]
