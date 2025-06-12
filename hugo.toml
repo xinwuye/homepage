@@ -56,7 +56,7 @@ enableRobotsTXT = true
     content = "* represents equal contribution and co-first authorship."
     [[params.projects.items]]
       title = "BC-Design: A Biochemistry-Aware Framework for Highly Accurate Inverse Protein Folding"
-      content = "Xiangru Tang*, **Xinwu Ye***, Fang Wu*, Daniel Shao, Yin Fang, Siming Chen, Dong Xu, Mark Gerstein. \n\nICML 2025 GenBio Workshop."
+      content = "Xiangru Tang*, **Xinwu Ye***, Fang Wu*, Daniel Shao, Yin Fang, Siming Chen, Dong Xu, Mark Gerstein. \n\n**ICML 2025 GenBio Workshop**."
       [[params.projects.items.links]]
         url = "https://www.biorxiv.org/content/10.1101/2024.10.28.620755v2"
         name = "paper"
