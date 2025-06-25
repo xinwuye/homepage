@@ -115,6 +115,14 @@ enableRobotsTXT = true
       school = { name = "Shanghai University of Finance and Economics" }
       content = "Shanghai, China"
 
+  # Professional Service section
+  [params.professionalService]
+    enable = true
+    title = "Professional Service"
+    [[params.professionalService.items]]
+      title = "Reviewer"
+      services = ["ICML 2025 AI4MATH Workshop", ]
+
 # Custom CSS to simplify the design
 [params.customCSS]
   enable = true
