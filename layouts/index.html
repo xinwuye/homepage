@@ -179,7 +179,13 @@
     <main>
         <!-- Intro paragraph with about ID -->
         <div id="about">
-            <p>{{ .Site.Params.description | markdownify }}</p>
+            {{ if .Site.Params.aboutParagraphs }}
+                {{ range .Site.Params.aboutParagraphs }}
+                <p>{{ . | markdownify }}</p>
+                {{ end }}
+            {{ else }}
+                <p>{{ .Site.Params.description | markdownify }}</p>
+            {{ end }}
             <div class="social-badges">
                 <a href="https://scholar.google.com/citations?user=A_e_cnMAAAAJ&hl=en&oi=ao" class="google-scholar" target="_blank">
                     <i class="fas fa-graduation-cap"></i>
