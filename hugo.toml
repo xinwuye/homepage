@@ -18,11 +18,9 @@ enableRobotsTXT = true
 [params]
   title = "Xinwu Ye"
   author = "Xinwu Ye"
-  description = "I earned my bachelor's degrees from Shanghai University of Finance and Economics and my master's degree from Fudan University. My research interests focus on solving scientific problems with deep learning, with particular emphasis on graph machine learning, large language models, and bioinformatics applications."
-  
   # Multi-paragraph about section
   aboutParagraphs = [
-    "I completed my master's degree at Fudan University. I earned my bachelor's degrees from Shanghai University of Finance and Economics. My research interests focus on solving scientific problems with deep learning, with particular emphasis on graph machine learning, large language models, and bioinformatics applications.",
+    "I earned my bachelor's degrees from Shanghai University of Finance and Economics and my master's degree from Fudan University. My research interests focus on solving scientific problems with deep learning, with particular emphasis on graph machine learning, large language models, and bioinformatics applications.",
     "I am always seeking new research collaborations to tackle challenging problems. Additionally, I am open to discussing technology commercialization and co-founding opportunities. If you see a potential for us to work together, please drop me an email.",
     "**Email**: yexw0403[at]foxmail[dot]com"
   ]
