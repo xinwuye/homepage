@@ -106,7 +106,7 @@ enableRobotsTXT = true
     [[params.achievements.items]]
       title = "VidAnimator: User-Guided Stylized 3D Character Animation from Human Videos"
       content = "**Xinwu Ye***, Jun-Hsiang Yao*, Jielin Feng, Shuhong Mei, Xingyu Lan, Siming Chen"
-      [[params.projects.items.links]]
+      [[params.achievements.items.links]]
         url = "https://arxiv.org/abs/2508.01878"
         name = "paper"
 
