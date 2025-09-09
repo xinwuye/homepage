@@ -138,7 +138,7 @@ enableRobotsTXT = true
     title = "Professional Service"
     [[params.professionalService.items]]
       title = "Reviewer"
-      services = ["Applied Intelligence", "ICML 2025 Workshop AI4MATH", "COLM 2025 Workshop SoLaR"]
+      services = ["Applied Intelligence", "ICML 2025 Workshop AI4MATH", "COLM 2025 Workshop SoLaR", "NeurIPS 2025 Workshop LXAI"]
 
 # Custom CSS to simplify the design
 [params.customCSS]
