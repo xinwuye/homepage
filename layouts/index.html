@@ -156,6 +156,27 @@
         .social-badges a.linkedin:hover {
             color: #0077b5;
         }
+
+        .headshot {
+            position: fixed;
+            top: 80px;
+            right: 40px;
+            width: 170px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+            z-index: 1100;
+        }
+
+        @media (max-width: 992px) {
+            .headshot {
+                position: static;
+                display: block;
+                margin: 20px auto 0;
+                width: 140px;
+                box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+            }
+        }
     </style>
     {{ range .Site.Params.customCSS.css }}
     <style>{{ . | safeCSS }}</style>
@@ -175,6 +196,8 @@
             </div>
         </div>
     </nav>
+
+    <img class="headshot" src="/images/headshot2.png" alt="Xinwu Ye headshot">
 
     <main>
         <!-- Intro paragraph with about ID -->
