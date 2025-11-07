@@ -129,13 +129,13 @@
             position: fixed;
             top: 80px;
             right: 40px;
-            width: 220px;
+            width: 280px;
             text-align: center;
             z-index: 1100;
         }
 
         .headshot {
-            width: 160px;
+            width: 170px;
             height: auto;
             border-radius: 50%;
             box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
@@ -145,19 +145,36 @@
 
         .headshot-contact {
             margin-top: 18px;
-            padding: 16px 18px;
-            background: #fff;
-            border: 1px solid #eaeaea;
-            border-radius: 18px;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+            padding: 0;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            box-shadow: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .headshot-email-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            white-space: nowrap;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .headshot-email-label {
+            color: #555;
         }
 
         .headshot-email {
-            display: block;
+            display: inline;
             color: #0366d6;
             font-weight: 600;
             text-decoration: none;
-            word-break: break-word;
         }
 
         .headshot-email:hover {
@@ -202,13 +219,12 @@
             }
 
             .headshot {
-                width: 140px;
+                width: 150px;
                 box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
             }
 
             .headshot-contact {
                 margin: 16px auto 0;
-                max-width: 320px;
             }
         }
     </style>
@@ -234,7 +250,10 @@
     <div class="headshot-wrapper">
         <img class="headshot" src="{{ relURL "images/headshot2.png" }}" alt="Xinwu Ye headshot">
         <div class="headshot-contact">
-            <a class="headshot-email" href="mailto:xinwuye43@connect.hku.hk">xinwuye43@connect.hku.hk</a>
+            <div class="headshot-email-row">
+                <span class="headshot-email-label">Email:</span>
+                <a class="headshot-email" href="mailto:xinwuye43@connect.hku.hk">xinwuye43@connect.hku.hk</a>
+            </div>
             <div class="headshot-social">
                 <a href="https://scholar.google.com/citations?user=A_e_cnMAAAAJ&hl=en&oi=ao" class="google-scholar" target="_blank" aria-label="Google Scholar">
                     <i class="fas fa-graduation-cap"></i>
