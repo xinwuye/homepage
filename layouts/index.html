@@ -125,56 +125,90 @@
             scroll-margin-top: 70px; /* Ensures the section title is visible when scrolled to */
         }
 
-        /* Social badges styling - updated for icons */
-        .social-badges {
-            margin: 20px 0;
-        }
-        
-        .social-badges a {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 0;
-            color: #333;
-            text-decoration: none;
-            font-size: 24px;
-            transition: color 0.2s, transform 0.2s;
-        }
-        
-        .social-badges a:hover {
-            text-decoration: none;
-            transform: translateY(-2px);
-        }
-        
-        .social-badges a.google-scholar:hover {
-            color: #4285f4;
-        }
-        
-        .social-badges a.github:hover {
-            color: #24292e;
-        }
-        
-        .social-badges a.linkedin:hover {
-            color: #0077b5;
-        }
-
-        .headshot {
+        .headshot-wrapper {
             position: fixed;
             top: 80px;
             right: 40px;
-            width: 170px;
-            height: auto;
-            border-radius: 50%;
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+            width: 220px;
+            text-align: center;
             z-index: 1100;
         }
 
+        .headshot {
+            width: 160px;
+            height: auto;
+            border-radius: 50%;
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+            margin: 0 auto;
+            display: block;
+        }
+
+        .headshot-contact {
+            margin-top: 18px;
+            padding: 16px 18px;
+            background: #fff;
+            border: 1px solid #eaeaea;
+            border-radius: 18px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .headshot-email {
+            display: block;
+            color: #0366d6;
+            font-weight: 600;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .headshot-email:hover {
+            text-decoration: underline;
+        }
+
+        .headshot-social {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            margin-top: 14px;
+            font-size: 22px;
+        }
+
+        .headshot-social a {
+            color: #333;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .headshot-social a:hover {
+            transform: translateY(-2px);
+            text-decoration: none;
+        }
+
+        .headshot-social a.google-scholar:hover {
+            color: #4285f4;
+        }
+
+        .headshot-social a.github:hover {
+            color: #24292e;
+        }
+
+        .headshot-social a.linkedin:hover {
+            color: #0077b5;
+        }
+
         @media (max-width: 992px) {
-            .headshot {
+            .headshot-wrapper {
                 position: static;
-                display: block;
+                width: 100%;
                 margin: 20px auto 0;
+            }
+
+            .headshot {
                 width: 140px;
                 box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+            }
+
+            .headshot-contact {
+                margin: 16px auto 0;
+                max-width: 320px;
             }
         }
     </style>
@@ -197,7 +231,23 @@
         </div>
     </nav>
 
-    <img class="headshot" src="{{ relURL `images/headshot2.png` }}" alt="Xinwu Ye headshot">
+    <div class="headshot-wrapper">
+        <img class="headshot" src="{{ relURL "images/headshot2.png" }}" alt="Xinwu Ye headshot">
+        <div class="headshot-contact">
+            <a class="headshot-email" href="mailto:xinwuye43@connect.hku.hk">xinwuye43@connect.hku.hk</a>
+            <div class="headshot-social">
+                <a href="https://scholar.google.com/citations?user=A_e_cnMAAAAJ&hl=en&oi=ao" class="google-scholar" target="_blank" aria-label="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://github.com/xinwuye" class="github" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/xinwu-ye/" class="linkedin" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
     <main>
         <!-- Intro paragraph with about ID -->
@@ -209,17 +259,6 @@
             {{ else }}
                 <p>{{ .Site.Params.description | markdownify }}</p>
             {{ end }}
-            <div class="social-badges">
-                <a href="https://scholar.google.com/citations?user=A_e_cnMAAAAJ&hl=en&oi=ao" class="google-scholar" target="_blank">
-                    <i class="fas fa-graduation-cap"></i>
-                </a>
-                <a href="https://github.com/xinwuye" class="github" target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/xinwu-ye/" class="linkedin" target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
         </div>
 
         <!-- Publications section -->
