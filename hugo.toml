@@ -22,7 +22,6 @@ enableRobotsTXT = true
   aboutParagraphs = [
     "I am a PhD student at [Department of Computer Science](https://www.cs.hku.hk/) in The University of Hong Kong, advised by [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), and co-advised by [Liangyi Chen](https://future.pku.edu.cn/en/js/Faculty/InstituteMedicine/e215c13603434680a6f6c313a48f71f9.htm). I worked as a research assitant at [Gerstein Lab](https://www.gersteinlab.org/) in Yale University from 2024 to 2025. My research interests focus on solving scientific problems with artificial intelligence, with particular emphasis on biomolecule deisgn and large language models.",
     "I am always seeking new research collaborations to tackle challenging problems. Additionally, I am open to discussing technology commercialization and co-founding opportunities. If you see a potential for us to work together, please drop me an email.",
-    "**Email**: xinwuye43@connect.hku.hk"
   ]
   
   # Disable animations for cleaner look
