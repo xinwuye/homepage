@@ -339,8 +339,17 @@
         {{ range .Site.Params.professionalService.items }}
         <div class="service-item">
             <h3>{{ .title }}</h3>
-            {{ range .services }}
-            <p>{{ . }}</p>
+            {{ if .subsections }}
+                {{ range .subsections }}
+                <h4>{{ .title }}</h4>
+                    {{ range .items }}
+                    <p>{{ . }}</p>
+                    {{ end }}
+                {{ end }}
+            {{ else if .services }}
+                {{ range .services }}
+                <p>{{ . }}</p>
+                {{ end }}
             {{ end }}
         </div>
         {{ end }}
