@@ -103,11 +103,23 @@ enableRobotsTXT = true
     title = "Preprints"
     content = "* represents equal contribution and co-first authorship."
     [[params.achievements.items]]
+      title = "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning"
+      content = "**Xinwu Ye***, Yicheng Mao*, Jia Zhang, Yimeng Liu, Li Hao, Fang Wu, Zhiwei Li, Yuxuan Liao, Zehong Wang, Zhiyuan Liu, Zhenfei Yin, Li Yuan, Philip Torr, Huan Sun, Xiangxiang Zeng, Mengdi Wang, Le Cong, Shenghua Gao, Xiangru Tang. \n\n**arXiv (2026)**."
+      [[params.achievements.items.links]]
+        url = "https://arxiv.org/abs/2602.07075"
+        name = "paper"
+      [[params.achievements.items.links]]
+        url = "https://github.com/xinwuye/LatentChem"
+        name = "code"
+        
+    [[params.achievements.items]]
       title = "VidAnimator: User-Guided Stylized 3D Character Animation from Human Videos"
       content = "**Xinwu Ye***, Jun-Hsiang Yao*, Jielin Feng, Shuhong Mei, Xingyu Lan, Siming Chen. \n\n**arXiv (2025)**."
       [[params.achievements.items.links]]
         url = "https://arxiv.org/abs/2508.01878"
         name = "paper"
+
+
 
   # Education section
   [params.education]
