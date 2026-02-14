@@ -288,7 +288,7 @@
         {{ range .Site.Params.projects.items }}
         <div class="publication">
             <h3>{{ .title }}</h3>
-            <p>{{ .content | markdownify }}</p>
+            <p>{{ .content | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
             {{ if .featured }}
             <p><a href="{{ .featured.link }}" target="_blank" rel="noopener noreferrer">{{ .featured.name }}</a></p>
             {{ end }}
@@ -310,7 +310,7 @@
         {{ range .Site.Params.achievements.items }}
         <div class="preprint">
             <h3>{{ .title }}</h3>
-            <p>{{ .content | markdownify }}</p>
+            <p>{{ .content | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
             {{ if .url }}
             <p><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">PDF</a></p>
             {{ end }}
