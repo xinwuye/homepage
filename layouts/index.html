@@ -273,10 +273,10 @@
         <div id="about">
             {{ if .Site.Params.aboutParagraphs }}
                 {{ range .Site.Params.aboutParagraphs }}
-                <p>{{ . | markdownify }}</p>
+                <p>{{ . | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
                 {{ end }}
             {{ else }}
-                <p>{{ .Site.Params.description | markdownify }}</p>
+                <p>{{ .Site.Params.description | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
             {{ end }}
         </div>
 
