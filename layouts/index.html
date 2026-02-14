@@ -290,12 +290,12 @@
             <h3>{{ .title }}</h3>
             <p>{{ .content | markdownify }}</p>
             {{ if .featured }}
-            <p><a href="{{ .featured.link }}">{{ .featured.name }}</a></p>
+            <p><a href="{{ .featured.link }}" target="_blank" rel="noopener noreferrer">{{ .featured.name }}</a></p>
             {{ end }}
             {{ if .links }}
             <p>
             {{ range .links }}
-            <a href="{{ .url }}" style="margin-right: 15px;">{{ .name }}</a>
+            <a href="{{ .url }}" style="margin-right: 15px;" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
             {{ end }}
             </p>
             {{ end }}
@@ -312,12 +312,12 @@
             <h3>{{ .title }}</h3>
             <p>{{ .content | markdownify }}</p>
             {{ if .url }}
-            <p><a href="{{ .url }}">PDF</a></p>
+            <p><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">PDF</a></p>
             {{ end }}
             {{ if .links }}
             <p>
             {{ range .links }}
-            <a href="{{ .url }}" style="margin-right: 15px;">{{ .name }}</a>
+            <a href="{{ .url }}" style="margin-right: 15px;" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
             {{ end }}
             </p>
             {{ end }}
