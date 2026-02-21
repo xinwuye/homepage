@@ -53,6 +53,29 @@ enableRobotsTXT = true
   [params.about]
     enable = false
 
+  # Preprints section (using custom projects format)
+  [params.achievements]
+    enable = true
+    title = "Preprints"
+    content = "* represents equal contribution and co-first authorship."
+    [[params.achievements.items]]
+      title = "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning"
+      content = "**Xinwu Ye**&#42;, [Yicheng Mao](https://github.com/riiiiiiin)&#42;, Jia Zhang, [Yimeng Liu](https://www.linkedin.com/in/yoyo-liu-023332219/), [Li Hao](https://howardli1984.github.io/), [Fang Wu](https://smiles724.github.io/), [Zhiwei Li](https://digbangbang.github.io/), [Yuxuan Liao](https://www.linkedin.com/in/yuxuan-liao021/), [Zehong Wang](https://zehong-wang.github.io/), [Zhiyuan Liu](https://acharkq.github.io/), [Zhenfei Yin](https://yinzhenfei.github.io/), [Li Yuan](https://yuanli2333.github.io/), [Philip Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en), [Huan Sun](https://u.osu.edu/ihudas/people/), [Xiangxiang Zeng](https://scholar.google.com/citations?user=B20HBMIAAAAJ&hl=en), [Mengdi Wang](https://scholar.google.com/citations?user=33yNvIgAAAAJ&hl=en), [Le Cong](https://scholar.google.com/citations?user=sfJIWdcAAAAJ&hl=en), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), [Xiangru Tang](https://xiangrutang.github.io/). \n\n**arXiv (2026)**."
+      [[params.achievements.items.links]]
+        url = "https://arxiv.org/abs/2602.07075"
+        name = "paper"
+      [[params.achievements.items.links]]
+        url = "https://github.com/xinwuye/LatentChem"
+        name = "code"
+        
+    # [[params.achievements.items]]
+    #   title = "VidAnimator: User-Guided Stylized 3D Character Animation from Human Videos"
+    #   content = "**Xinwu Ye**&#42;, [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ)&#42;, [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), Shuhong Mei, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**arXiv (2025)**."
+    #   [[params.achievements.items.links]]
+    #     url = "https://arxiv.org/abs/2508.01878"
+    #     name = "paper"
+
+
   # Publications section (using Projects format)
   [params.projects]
     enable = true
@@ -94,27 +117,6 @@ enableRobotsTXT = true
         url = "https://youtu.be/Qe0UfbemQLI"
         name = "video"
 
-  # Preprints section (using custom projects format)
-  [params.achievements]
-    enable = true
-    title = "Preprints"
-    content = "* represents equal contribution and co-first authorship."
-    [[params.achievements.items]]
-      title = "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning"
-      content = "**Xinwu Ye**&#42;, [Yicheng Mao](https://github.com/riiiiiiin)&#42;, Jia Zhang, [Yimeng Liu](https://www.linkedin.com/in/yoyo-liu-023332219/), [Li Hao](https://howardli1984.github.io/), [Fang Wu](https://smiles724.github.io/), [Zhiwei Li](https://digbangbang.github.io/), [Yuxuan Liao](https://www.linkedin.com/in/yuxuan-liao021/), [Zehong Wang](https://zehong-wang.github.io/), [Zhiyuan Liu](https://acharkq.github.io/), [Zhenfei Yin](https://yinzhenfei.github.io/), [Li Yuan](https://yuanli2333.github.io/), [Philip Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en), [Huan Sun](https://u.osu.edu/ihudas/people/), [Xiangxiang Zeng](https://scholar.google.com/citations?user=B20HBMIAAAAJ&hl=en), [Mengdi Wang](https://scholar.google.com/citations?user=33yNvIgAAAAJ&hl=en), [Le Cong](https://scholar.google.com/citations?user=sfJIWdcAAAAJ&hl=en), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), [Xiangru Tang](https://xiangrutang.github.io/). \n\n**arXiv (2026)**."
-      [[params.achievements.items.links]]
-        url = "https://arxiv.org/abs/2602.07075"
-        name = "paper"
-      [[params.achievements.items.links]]
-        url = "https://github.com/xinwuye/LatentChem"
-        name = "code"
-        
-    [[params.achievements.items]]
-      title = "VidAnimator: User-Guided Stylized 3D Character Animation from Human Videos"
-      content = "**Xinwu Ye**&#42;, [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ)&#42;, [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), Shuhong Mei, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**arXiv (2025)**."
-      [[params.achievements.items.links]]
-        url = "https://arxiv.org/abs/2508.01878"
-        name = "paper"
 
 
 
@@ -129,7 +131,7 @@ enableRobotsTXT = true
       content = "Hong Kong, China"
   
     [[params.education.items]]
-      title = "Master of Science"
+      title = "Master of Finance"
       date = "2023-2025"
       school = { name = "Fudan University" }
       content = "Shanghai, China"
@@ -151,7 +153,7 @@ enableRobotsTXT = true
         items = ["IEEE Transactions on Image Processing (TIP)", "IEEE Signal Processing Letters (SPL)", "IEEE Journal of Biomedical and Health Informatics (JBHI)", "Transactions on Machine Learning Research (TMLR)", "Journal of Medical Internet Research (JMIR)", "IEEE Transactions on Aerospace and Electronic Systems (TAES)", "Applied Intelligence (APIN)"]
       [[params.professionalService.items.subsections]]
         title = "Conference"
-        items = ["ICLR 2026", "PacificVis 2026"]
+        items = ["ICML 2026", "ICLR 2026", "PacificVis 2026"]
       [[params.professionalService.items.subsections]]
         title = "Workshop"
         items = ["ICML 2025 Workshop AI4MATH", "COLM 2025 Workshop SoLaR", "NeurIPS 2025 Workshop LXAI"]
