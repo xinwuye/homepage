@@ -239,8 +239,8 @@
             <a href="#" class="navbar-brand">Xinwu Ye</a>
             <div class="navbar-links">
                 <a href="#about">About</a>
-                <a href="#publications">Publications</a>
                 <a href="#preprints">Preprints</a>
+                <a href="#publications">Publications</a>
                 <a href="#education">Education</a>
                 <a href="#professional-service">Professional Service</a>
             </div>
@@ -280,28 +280,6 @@
             {{ end }}
         </div>
 
-        <!-- Publications section -->
-        <h2 id="publications">Publications</h2>
-        {{ if .Site.Params.projects.content }}
-        <p><em>{{ .Site.Params.projects.content }}</em></p>
-        {{ end }}
-        {{ range .Site.Params.projects.items }}
-        <div class="publication">
-            <h3>{{ .title }}</h3>
-            <p>{{ .content | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
-            {{ if .featured }}
-            <p><a href="{{ .featured.link }}" target="_blank" rel="noopener noreferrer">{{ .featured.name }}</a></p>
-            {{ end }}
-            {{ if .links }}
-            <p>
-            {{ range .links }}
-            <a href="{{ .url }}" style="margin-right: 15px;" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
-            {{ end }}
-            </p>
-            {{ end }}
-        </div>
-        {{ end }}
-
         <!-- Preprints section -->
         <h2 id="preprints">Preprints</h2>
         {{ if .Site.Params.achievements.content }}
@@ -313,6 +291,28 @@
             <p>{{ .content | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
             {{ if .url }}
             <p><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">PDF</a></p>
+            {{ end }}
+            {{ if .links }}
+            <p>
+            {{ range .links }}
+            <a href="{{ .url }}" style="margin-right: 15px;" target="_blank" rel="noopener noreferrer">{{ .name }}</a>
+            {{ end }}
+            </p>
+            {{ end }}
+        </div>
+        {{ end }}
+
+        <!-- Publications section -->
+        <h2 id="publications">Publications</h2>
+        {{ if .Site.Params.projects.content }}
+        <p><em>{{ .Site.Params.projects.content }}</em></p>
+        {{ end }}
+        {{ range .Site.Params.projects.items }}
+        <div class="publication">
+            <h3>{{ .title }}</h3>
+            <p>{{ .content | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
+            {{ if .featured }}
+            <p><a href="{{ .featured.link }}" target="_blank" rel="noopener noreferrer">{{ .featured.name }}</a></p>
             {{ end }}
             {{ if .links }}
             <p>
