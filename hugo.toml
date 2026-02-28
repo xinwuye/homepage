@@ -156,7 +156,7 @@ enableRobotsTXT = true
         items = ["[ICML 2026](https://icml.cc/)", "[ICLR 2026](https://iclr.cc/)", "[PacificVis 2026](https://pacificvis2026.github.io/)"]
       [[params.professionalService.items.subsections]]
         title = "Workshop"
-        items = ["[ICML 2025 Workshop AI4MATH](https://icml.cc/virtual/2025/workshop/39979)", "[COLM 2025 Workshop SoLaR](https://solar-colm.github.io/)", "[NeurIPS 2025 Workshop LXAI](https://openreview.net/group?id=NeurIPS.cc%2F2025%2FWorkshop%2FLXAI)"]
+        items = ["[AAMAS 2026 Workshop ASI](https://panosd.eu/asi2026/)", "[ICML 2025 Workshop AI4MATH](https://icml.cc/virtual/2025/workshop/39979)", "[COLM 2025 Workshop SoLaR](https://solar-colm.github.io/)", "[NeurIPS 2025 Workshop LXAI](https://openreview.net/group?id=NeurIPS.cc%2F2025%2FWorkshop%2FLXAI)"]
 
 # Custom CSS to simplify the design
 [params.customCSS]
