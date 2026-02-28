@@ -150,13 +150,13 @@ enableRobotsTXT = true
       title = "Reviewer"
       [[params.professionalService.items.subsections]]
         title = "Journal"
-        items = ["IEEE Transactions on Image Processing (TIP)", "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)", "IEEE Signal Processing Letters (SPL)", "IEEE Journal of Biomedical and Health Informatics (JBHI)", "Transactions on Machine Learning Research (TMLR)", "Journal of Medical Internet Research (JMIR)", "IEEE Transactions on Aerospace and Electronic Systems (TAES)", "Applied Intelligence (APIN)"]
+        items = ["[IEEE Transactions on Image Processing (TIP)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)", "[IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=76)", "[IEEE Signal Processing Letters (SPL)](https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=97)", "[IEEE Journal of Biomedical and Health Informatics (JBHI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020)", "[Transactions on Machine Learning Research (TMLR)](https://jmlr.org/tmlr/)", "[Journal of Medical Internet Research (JMIR)](https://www.jmir.org/)", "[IEEE Transactions on Aerospace and Electronic Systems (TAES)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7)", "[Applied Intelligence (APIN)](https://link.springer.com/journal/10489)"]
       [[params.professionalService.items.subsections]]
         title = "Conference"
-        items = ["ICML 2026", "ICLR 2026", "PacificVis 2026"]
+        items = ["[ICML 2026](https://icml.cc/)", "[ICLR 2026](https://iclr.cc/)", "[PacificVis 2026](https://pacificvis2026.github.io/)"]
       [[params.professionalService.items.subsections]]
         title = "Workshop"
-        items = ["ICML 2025 Workshop AI4MATH", "COLM 2025 Workshop SoLaR", "NeurIPS 2025 Workshop LXAI"]
+        items = ["[ICML 2025 Workshop AI4MATH](https://icml.cc/virtual/2025/workshop/39979)", "[COLM 2025 Workshop SoLaR](https://solar-colm.github.io/)", "[NeurIPS 2025 Workshop LXAI](https://openreview.net/group?id=NeurIPS.cc%2F2025%2FWorkshop%2FLXAI)"]
 
 # Custom CSS to simplify the design
 [params.customCSS]

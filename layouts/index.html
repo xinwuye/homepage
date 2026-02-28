@@ -342,10 +342,10 @@
             {{ if .subsections }}
                 {{ range .subsections }}
                 <h4>{{ .title }}</h4>
-                <p>{{ range $index, $item := .items }}{{ if $index }}, {{ end }}{{ $item }}{{ end }}</p>
+                <p>{{ range $index, $item := .items }}{{ if $index }}, {{ end }}{{ $item | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}{{ end }}</p>
                 {{ end }}
             {{ else if .services }}
-                <p>{{ range $index, $item := .services }}{{ if $index }}, {{ end }}{{ $item }}{{ end }}</p>
+                <p>{{ range $index, $item := .services }}{{ if $index }}, {{ end }}{{ $item | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}{{ end }}</p>
             {{ end }}
         </div>
         {{ end }}
