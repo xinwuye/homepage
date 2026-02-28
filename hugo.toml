@@ -84,14 +84,14 @@ enableRobotsTXT = true
 
     [[params.projects.items]]
       title = "Tower of Babel in Cross-Cultural Communication: A Case Study of #Give Me a Chinese Name# Dialogues During the “TikTok Refugees” Event"
-      content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Zhibo Yang](https://orcid.org/0009-0006-9679-5101), [Jingyi Zhao](https://orcid.org/0009-0006-7355-5519), [Yujia Li](https://orcid.org/0009-0003-8846-8889), **Xinwu Ye**, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](https://simingchen.me/). \n\n**ACM CHI 2026**."
+      content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Zhibo Yang](https://orcid.org/0009-0006-9679-5101), [Jingyi Zhao](https://orcid.org/0009-0006-7355-5519), [Yujia Li](https://orcid.org/0009-0003-8846-8889), **Xinwu Ye**, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**ACM CHI 2026**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/html/2602.18549v1"
         name = "paper"
 
     [[params.projects.items]]
       title = "InfoAlign: A Human–AI Co-Creation System for Storytelling with Infographics"
-      content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), **Xinwu Ye**, [Qianhui Li](https://orcid.org/0009-0006-8804-8130), [Verena Ingrid Prantl](https://dblp.org/pid/345/7956.html), [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), [Yuheng Zhao](https://zyh1222.github.io/), [Yun Wang](https://www.microsoft.com/en-us/research/people/wangyun/), [Siming Chen](https://simingchen.me/). \n\n**ACM CHI 2026**."
+      content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), **Xinwu Ye**, [Qianhui Li](https://orcid.org/0009-0006-8804-8130), [Verena Ingrid Prantl](https://dblp.org/pid/345/7956.html), [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), [Yuheng Zhao](https://zyh1222.github.io/), [Yun Wang](https://www.microsoft.com/en-us/research/people/wangyun/), [Siming Chen](http://simingchen.me/). \n\n**ACM CHI 2026**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/html/2602.22901v1"
         name = "paper"
@@ -142,19 +142,19 @@ enableRobotsTXT = true
     [[params.education.items]]
       title = "PhD in Computer Science"
       date = "2025-present"
-      school = { name = "The University of Hong Kong" }
+      school = { name = "The University of Hong Kong", url = "https://www.hku.hk/" }
       content = "Hong Kong, China"
   
     [[params.education.items]]
       title = "Master of Finance"
       date = "2023-2025"
-      school = { name = "Fudan University" }
+      school = { name = "Fudan University", url = "https://www.fudan.edu.cn/en/" }
       content = "Shanghai, China"
         
     [[params.education.items]]
       title = "Bachelor of Science & Bachelor of Engineering"
       date = "2019-2023"
-      school = { name = "Shanghai University of Finance and Economics" }
+      school = { name = "Shanghai University of Finance and Economics", url = "https://www.sufe.edu.cn/en/" }
       content = "Shanghai, China"
 
   # Professional Service section
