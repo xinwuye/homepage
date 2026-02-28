@@ -154,7 +154,7 @@ enableRobotsTXT = true
     [[params.education.items]]
       title = "Bachelor of Science & Bachelor of Engineering"
       date = "2019-2023"
-      school = { name = "Shanghai University of Finance and Economics", url = "https://www.sufe.edu.cn/en/" }
+      school = { name = "Shanghai University of Finance and Economics", url = "https://english.sufe.edu.cn/" }
       content = "Shanghai, China"
 
   # Professional Service section
