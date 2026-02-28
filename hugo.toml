@@ -81,6 +81,21 @@ enableRobotsTXT = true
     enable = true
     title = "Publications"
     content = "* represents equal contribution and co-first authorship."
+
+    [[params.projects.items]]
+      title = "Tower of Babel in Cross-Cultural Communication: A Case Study of #Give Me a Chinese Name# Dialogues During the “TikTok Refugees” Event"
+      content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Zhibo Yang](https://orcid.org/0009-0006-9679-5101), [Jingyi Zhao](https://orcid.org/0009-0006-7355-5519), [Yujia Li](https://orcid.org/0009-0003-8846-8889), **Xinwu Ye**, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](https://simingchen.me/). \n\n**ACM CHI 2026**."
+      [[params.projects.items.links]]
+        url = "https://arxiv.org/html/2602.18549v1"
+        name = "paper"
+
+    [[params.projects.items]]
+      title = "InfoAlign: A Human–AI Co-Creation System for Storytelling with Infographics"
+      content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), **Xinwu Ye**, [Qianhui Li](https://orcid.org/0009-0006-8804-8130), [Verena Ingrid Prantl](https://dblp.org/pid/345/7956.html), [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), [Yuheng Zhao](https://zyh1222.github.io/), [Yun Wang](https://www.microsoft.com/en-us/research/people/wangyun/), [Siming Chen](https://simingchen.me/). \n\n**ACM CHI 2026**."
+      [[params.projects.items.links]]
+        url = "https://arxiv.org/html/2602.22901v1"
+        name = "paper"
+
     [[params.projects.items]]
       title = "BC-Design: A Biochemistry-Aware Framework for Inverse Protein Design"
       content = "[Xiangru Tang](https://xiangrutang.github.io/)&#42;, **Xinwu Ye**&#42;, [Fang Wu](https://smiles724.github.io/)&#42;, [Yimeng Liu](https://www.linkedin.com/in/yoyo-liu-023332219/), [Anna Su](https://reflect.ucl.ac.uk/anna-su-scientific-research/), [Antonia Panescu](https://www.linkedin.com/in/antonia-panescu-489a82214/), [Guanlue Li](https://www.inf.uni-hamburg.de/en/inst/ab/ml/people/li.html), [Daniel Shao](https://scholar.google.com/citations?user=rtmmmfIAAAAJ), [Dong Xu](https://scholar.google.com/citations?user=xJeTtCoAAAAJ&hl=en), [Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en). \n\n**ICML 2025 Workshop GenBio**."
