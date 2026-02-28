@@ -329,7 +329,11 @@
         {{ range .Site.Params.education.items }}
         <div class="education-item">
             <h3>{{ .title }}</h3>
+            {{ if .school.url }}
+            <p><a href="{{ .school.url }}" target="_blank" rel="noopener noreferrer">{{ .school.name }}</a></p>
+            {{ else }}
             <p>{{ .school.name }}</p>
+            {{ end }}
             <p>{{ .date }} | {{ .content }}</p>
         </div>
         {{ end }}
