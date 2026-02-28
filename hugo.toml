@@ -150,7 +150,7 @@ enableRobotsTXT = true
       title = "Reviewer"
       [[params.professionalService.items.subsections]]
         title = "Journal"
-        items = ["IEEE Transactions on Image Processing (TIP)", "IEEE Signal Processing Letters (SPL)", "IEEE Journal of Biomedical and Health Informatics (JBHI)", "Transactions on Machine Learning Research (TMLR)", "Journal of Medical Internet Research (JMIR)", "IEEE Transactions on Aerospace and Electronic Systems (TAES)", "Applied Intelligence (APIN)"]
+        items = ["IEEE Transactions on Image Processing (TIP)", "IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)", "IEEE Signal Processing Letters (SPL)", "IEEE Journal of Biomedical and Health Informatics (JBHI)", "Transactions on Machine Learning Research (TMLR)", "Journal of Medical Internet Research (JMIR)", "IEEE Transactions on Aerospace and Electronic Systems (TAES)", "Applied Intelligence (APIN)"]
       [[params.professionalService.items.subsections]]
         title = "Conference"
         items = ["ICML 2026", "ICLR 2026", "PacificVis 2026"]

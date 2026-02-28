@@ -342,14 +342,10 @@
             {{ if .subsections }}
                 {{ range .subsections }}
                 <h4>{{ .title }}</h4>
-                    {{ range .items }}
-                    <p>{{ . }}</p>
-                    {{ end }}
+                <p>{{ range $index, $item := .items }}{{ if $index }}, {{ end }}{{ $item }}{{ end }}</p>
                 {{ end }}
             {{ else if .services }}
-                {{ range .services }}
-                <p>{{ . }}</p>
-                {{ end }}
+                <p>{{ range $index, $item := .services }}{{ if $index }}, {{ end }}{{ $item }}{{ end }}</p>
             {{ end }}
         </div>
         {{ end }}
