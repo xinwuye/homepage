@@ -58,15 +58,6 @@ enableRobotsTXT = true
     enable = true
     title = "Preprints"
     content = "* represents equal contribution and co-first authorship."
-    [[params.achievements.items]]
-      title = "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning"
-      content = "**Xinwu Ye**&#42;, [Yicheng Mao](https://github.com/riiiiiiin)&#42;, Jia Zhang, [Yimeng Liu](https://www.linkedin.com/in/yoyo-liu-023332219/), [Li Hao](https://howardli1984.github.io/), [Fang Wu](https://smiles724.github.io/), [Zhiwei Li](https://digbangbang.github.io/), [Yuxuan Liao](https://www.linkedin.com/in/yuxuan-liao021/), [Zehong Wang](https://zehong-wang.github.io/), [Zhiyuan Liu](https://acharkq.github.io/), [Zhenfei Yin](https://yinzhenfei.github.io/), [Li Yuan](https://yuanli2333.github.io/), [Philip Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en), [Huan Sun](https://u.osu.edu/ihudas/people/), [Xiangxiang Zeng](https://scholar.google.com/citations?user=B20HBMIAAAAJ&hl=en), [Mengdi Wang](https://scholar.google.com/citations?user=33yNvIgAAAAJ&hl=en), [Le Cong](https://scholar.google.com/citations?user=sfJIWdcAAAAJ&hl=en), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), [Xiangru Tang](https://xiangrutang.github.io/). \n\n**arXiv (2026)**."
-      [[params.achievements.items.links]]
-        url = "https://arxiv.org/abs/2602.07075"
-        name = "paper"
-      [[params.achievements.items.links]]
-        url = "https://github.com/xinwuye/LatentChem"
-        name = "code"
         
     # [[params.achievements.items]]
     #   title = "VidAnimator: User-Guided Stylized 3D Character Animation from Human Videos"
