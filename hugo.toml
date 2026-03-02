@@ -83,6 +83,16 @@ enableRobotsTXT = true
     content = "* represents equal contribution and co-first authorship."
 
     [[params.projects.items]]
+      title = "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning"
+      content = "**Xinwu Ye**&#42;, [Yicheng Mao](https://github.com/riiiiiiin)&#42;, Jia Zhang, [Yimeng Liu](https://www.linkedin.com/in/yoyo-liu-023332219/), [Li Hao](https://howardli1984.github.io/), [Fang Wu](https://smiles724.github.io/), [Zhiwei Li](https://digbangbang.github.io/), [Yuxuan Liao](https://www.linkedin.com/in/yuxuan-liao021/), [Zehong Wang](https://zehong-wang.github.io/), [Zhiyuan Liu](https://acharkq.github.io/), [Zhenfei Yin](https://yinzhenfei.github.io/), [Li Yuan](https://yuanli2333.github.io/), [Philip Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en), [Huan Sun](https://u.osu.edu/ihudas/people/), [Xiangxiang Zeng](https://scholar.google.com/citations?user=B20HBMIAAAAJ&hl=en), [Mengdi Wang](https://scholar.google.com/citations?user=33yNvIgAAAAJ&hl=en), [Le Cong](https://scholar.google.com/citations?user=sfJIWdcAAAAJ&hl=en), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), [Xiangru Tang](https://xiangrutang.github.io/). \n\n**ICLR 2026 workshop LIT**."
+      [[params.projects.items.links]]
+        url = "https://arxiv.org/abs/2602.07075"
+        name = "paper"
+      [[params.projects.items.links]]
+        url = "https://github.com/xinwuye/LatentChem"
+        name = "code"
+
+    [[params.projects.items]]
       title = "Tower of Babel in Cross-Cultural Communication: A Case Study of #Give Me a Chinese Name# Dialogues During the “TikTok Refugees” Event"
       content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Zhibo Yang](https://orcid.org/0009-0006-9679-5101), [Jingyi Zhao](https://orcid.org/0009-0006-7355-5519), [Yujia Li](https://orcid.org/0009-0003-8846-8889), **Xinwu Ye**, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**ACM CHI 2026**."
       [[params.projects.items.links]]
