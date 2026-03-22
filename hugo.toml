@@ -122,7 +122,7 @@ enableRobotsTXT = true
         
     [[params.projects.items]]
       title = "GNNFairViz: Visual Analysis for Graph Neural Network Fairness"
-      content = "**Xinwu Ye**, [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Erasmo Purificato](https://erasmopurif.com/), [Ludovico Boratto](https://aibd.unica.it/people/ludovico-boratto), [Michael Kamp](https://michaelkamp.org/), [Zengfeng Huang](https://zengfenghuang.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (2025)](https://www.computer.org/csdl-pub-home-tvcg/)**."
+      content = "**Xinwu Ye**, [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Erasmo Purificato](https://erasmopurif.com/), [Ludovico Boratto](https://aibd.unica.it/people/ludovico-boratto), [Michael Kamp](https://michaelkamp.org/), [Zengfeng Huang](https://zengfenghuang.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (2025)](https://www.computer.org/tvcg)**."
       [[params.projects.items.links]]
         url = "https://ieeexplore.ieee.org/abstract/document/10891209"
         name = "paper"
@@ -166,7 +166,7 @@ enableRobotsTXT = true
       title = "Reviewer"
       [[params.professionalService.items.subsections]]
         title = "Journal"
-        items = ["[IEEE Transactions on Image Processing (TIP)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)", "[IEEE Transactions on Consumer Electronics (TCE)](https://ctsoc.ieee.org/publications/ieee-transactions-on-consumer-electronics.html)", "[IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=76)", "[IEEE Signal Processing Letters (SPL)](https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=97)", "[IEEE Journal of Biomedical and Health Informatics (JBHI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020)", "[Transactions on Machine Learning Research (TMLR)](https://jmlr.org/tmlr/)", "[Journal of Medical Internet Research (JMIR)](https://www.jmir.org/)", "[IEEE Transactions on Aerospace and Electronic Systems (TAES)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7)", "[Applied Intelligence (APIN)](https://link.springer.com/journal/10489)"]
+        items = ["[IEEE Transactions on Image Processing (TIP)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=83)", "[IEEE Transactions on Consumer Electronics (TCE)](https://ctsoc.ieee.org/publications/)", "[IEEE Transactions on Circuits and Systems for Video Technology (TCSVT)](https://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=76)", "[IEEE Signal Processing Letters (SPL)](https://ieeexplore.ieee.org/xpl/aboutJournal.jsp?punumber=97)", "[IEEE Journal of Biomedical and Health Informatics (JBHI)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020)", "[Transactions on Machine Learning Research (TMLR)](https://jmlr.org/tmlr/)", "[Journal of Medical Internet Research (JMIR)](https://www.jmir.org/)", "[IEEE Transactions on Aerospace and Electronic Systems (TAES)](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7)", "[Applied Intelligence (APIN)](https://link.springer.com/journal/10489)"]
       [[params.professionalService.items.subsections]]
         title = "Conference"
         items = ["[ICML 2026](https://icml.cc/)", "[ICLR 2026](https://iclr.cc/)", "[PacificVis 2026](https://pacificvis2026.github.io/)"]
