@@ -57,7 +57,24 @@ enableRobotsTXT = true
   [params.achievements]
     enable = true
     title = "Preprints"
-    content = "* represents equal contribution and co-first authorship."
+    content = "* represents equal contribution and co-first authorship. ✉ represents corresponding author."
+        
+    [[params.achievements.items]]
+      title = "FORGE: Fragment-Oriented Ranking and Generation for Context-Aware Molecular Optimization"
+      content = "[Qingchuan Zhang](https://scholar.google.com/citations?hl=zh-CN&user=aP4s6MkAAAAJ), [He Cao](https://github.com/Ciaohe), [Hao Li](https://howardli1984.github.io/), [Daniel Shao](https://scholar.google.com/citations?user=rtmmmfIAAAAJ), [Zhiyuan Liu](https://acharkq.github.io/), [Shihang Wang](https://shihang-wang-58.github.io/), [Shufang Xie](https://openreview.net/profile?id=~Shufang_Xie1), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), **Xinwu Ye**<sup>✉</sup>. \n\n**arXiv (2026)**."
+      [[params.achievements.items.links]]
+        url = "https://arxiv.org/abs/2605.10230"
+        name = "paper"
+        
+    [[params.achievements.items]]
+      title = "Pushing Biomolecular Utility-Diversity Frontiers with Supergroup Relative Policy Optimization"
+      content = "**Xinwu Ye**&#42;, [He Cao](https://github.com/Ciaohe)&#42;, [Hao Li](https://howardli1984.github.io/), [Bin Feng](https://openreview.net/profile?id=~Bin_Feng4), [Zijing Liu](https://openreview.net/profile?id=~Zijing_Liu1), [Xiangru Tang](https://xiangrutang.github.io/), [Yu Li](https://yu-li.github.io/), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en). \n\n**arXiv (2026)**."
+      [[params.achievements.items.links]]
+        url = "https://arxiv.org/abs/2605.08659"
+        name = "paper"
+      [[params.achievements.items.links]]
+        url = "https://github.com/IDEA-XL/SGRPO"
+        name = "code"
         
     # [[params.achievements.items]]
     #   title = "VidAnimator: User-Guided Stylized 3D Character Animation from Human Videos"
