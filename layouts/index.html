@@ -111,6 +111,51 @@
         .publication h3, .preprint h3, .education-item h3, .service-item h3 {
             margin-bottom: 6px;
         }
+
+        .paper-filters {
+            margin: 28px 0 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .filter-label {
+            min-width: 58px;
+            color: #555;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .filter-button {
+            border: 1px solid #d0d7de;
+            background: #fff;
+            color: #555;
+            border-radius: 6px;
+            padding: 4px 11px;
+            font: inherit;
+            font-size: 14px;
+            line-height: 1.4;
+            cursor: pointer;
+            transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+        }
+
+        .filter-button:hover {
+            border-color: #0366d6;
+            color: #0366d6;
+        }
+
+        .filter-button.is-active {
+            border-color: #0366d6;
+            background: #0366d6;
+            color: #fff;
+        }
         
         strong {
             font-weight: 600;
@@ -284,6 +329,20 @@
             {{ end }}
         </div>
 
+        <div class="paper-filters" aria-label="Paper filters">
+            <div class="filter-group" aria-label="Paper set">
+                <span class="filter-label">Show</span>
+                <button class="filter-button is-active" type="button" data-paper-scope="selected" aria-pressed="true">Selected</button>
+                <button class="filter-button" type="button" data-paper-scope="all" aria-pressed="false">All</button>
+            </div>
+            <div class="filter-group" aria-label="Paper topics">
+                <span class="filter-label">Topics</span>
+                <button class="filter-button" type="button" data-paper-topic="LLMs" aria-pressed="false">LLMs</button>
+                <button class="filter-button" type="button" data-paper-topic="AI4Science" aria-pressed="false">AI4Science</button>
+                <button class="filter-button" type="button" data-paper-topic="AI&Human" aria-pressed="false">AI&amp;Human</button>
+            </div>
+        </div>
+
         {{ if .Site.Params.achievements.items }}
         <!-- Preprints section -->
         <h2 id="preprints">Preprints</h2>
@@ -291,7 +350,7 @@
         <p><em>{{ .Site.Params.achievements.content }}</em></p>
         {{ end }}
         {{ range .Site.Params.achievements.items }}
-        <div class="preprint">
+        <div class="preprint paper-item" data-paper-item data-selected="{{ if .selected }}true{{ else }}false{{ end }}" data-topics="{{ with .topics }}{{ delimit . "," }}{{ end }}">
             <h3>{{ .title }}</h3>
             <p>{{ .content | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
             {{ if .url }}
@@ -314,7 +373,7 @@
         <p><em>{{ .Site.Params.projects.content }}</em></p>
         {{ end }}
         {{ range .Site.Params.projects.items }}
-        <div class="publication">
+        <div class="publication paper-item" data-paper-item data-selected="{{ if .selected }}true{{ else }}false{{ end }}" data-topics="{{ with .topics }}{{ delimit . "," }}{{ end }}">
             <h3>{{ .title }}</h3>
             <p>{{ .content | markdownify | replaceRE "<a " "<a target=\"_blank\" rel=\"noopener noreferrer\" " | safeHTML }}</p>
             {{ if .featured }}
@@ -362,5 +421,64 @@
         </div>
         {{ end }}
     </main>
+    <script>
+        (() => {
+            const paperItems = Array.from(document.querySelectorAll("[data-paper-item]"));
+            const scopeButtons = Array.from(document.querySelectorAll("[data-paper-scope]"));
+            const topicButtons = Array.from(document.querySelectorAll("[data-paper-topic]"));
+            const activeTopics = new Set();
+            let activeScope = "selected";
+
+            function setPressed(button, isPressed) {
+                button.classList.toggle("is-active", isPressed);
+                button.setAttribute("aria-pressed", String(isPressed));
+            }
+
+            function getTopics(item) {
+                return (item.dataset.topics || "").split(",").filter(Boolean);
+            }
+
+            function matchesTopics(item) {
+                if (activeTopics.size === 0) {
+                    return true;
+                }
+
+                return getTopics(item).some((topic) => activeTopics.has(topic));
+            }
+
+            function applyFilters() {
+                paperItems.forEach((item) => {
+                    const matchesScope = activeScope === "all" || item.dataset.selected === "true";
+                    item.hidden = !(matchesScope && matchesTopics(item));
+                });
+            }
+
+            scopeButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    activeScope = button.dataset.paperScope;
+                    scopeButtons.forEach((scopeButton) => {
+                        setPressed(scopeButton, scopeButton === button);
+                    });
+                    applyFilters();
+                });
+            });
+
+            topicButtons.forEach((button) => {
+                button.addEventListener("click", () => {
+                    const topic = button.dataset.paperTopic;
+                    if (activeTopics.has(topic)) {
+                        activeTopics.delete(topic);
+                    } else {
+                        activeTopics.add(topic);
+                    }
+
+                    setPressed(button, activeTopics.has(topic));
+                    applyFilters();
+                });
+            });
+
+            applyFilters();
+        })();
+    </script>
 </body>
 </html> 

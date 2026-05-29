@@ -68,6 +68,8 @@ enableRobotsTXT = true
 
     [[params.projects.items]]
       title = "FORGE: Fragment-Oriented Ranking and Generation for Context-Aware Molecular Optimization"
+      selected = true
+      topics = ["LLMs", "AI4Science"]
       content = "[Qingchuan Zhang](https://scholar.google.com/citations?hl=zh-CN&user=aP4s6MkAAAAJ), [He Cao](https://github.com/Ciaohe), [Hao Li](https://howardli1984.github.io/), [Daniel Shao](https://scholar.google.com/citations?user=rtmmmfIAAAAJ), [Zhiyuan Liu](https://acharkq.github.io/), [Shihang Wang](https://shihang-wang-58.github.io/), [Shufang Xie](https://openreview.net/profile?id=~Shufang_Xie1), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), **Xinwu Ye**<sup>✉</sup>. \n\n**[ICML 2026 GenBio](https://genbio-workshop.github.io/2026/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2605.10230"
@@ -75,6 +77,8 @@ enableRobotsTXT = true
         
     [[params.projects.items]]
       title = "Pushing Biomolecular Utility-Diversity Frontiers with Supergroup Relative Policy Optimization"
+      selected = true
+      topics = ["AI4Science"]
       content = "**Xinwu Ye**&#42;, [He Cao](https://github.com/Ciaohe)&#42;, [Hao Li](https://howardli1984.github.io/), [Bin Feng](https://openreview.net/profile?id=~Bin_Feng4), [Zijing Liu](https://openreview.net/profile?id=~Zijing_Liu1), [Xiangru Tang](https://xiangrutang.github.io/), [Yu Li](https://yu-li.github.io/), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en). \n\n**[ICML 2026 GenBio](https://genbio-workshop.github.io/2026/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2605.08659"
@@ -85,6 +89,8 @@ enableRobotsTXT = true
         
     [[params.projects.items]]
       title = "VidAnimator: User-Guided Stylized 3D Character Animation from Human Videos"
+      selected = false
+      topics = ["AI&Human"]
       content = "**Xinwu Ye**&#42;, [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ)&#42;, [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), Shuhong Mei, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[ICML 2026 GlobalSouth](https://sites.google.com/view/globalsouthml-icml-26/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2508.01878"
@@ -92,6 +98,8 @@ enableRobotsTXT = true
 
     [[params.projects.items]]
       title = "LatentChem: From Textual CoT to Latent Thinking in Chemical Reasoning"
+      selected = true
+      topics = ["LLMs", "AI4Science"]
       content = "**Xinwu Ye**&#42;, [Yicheng Mao](https://github.com/riiiiiiin)&#42;, Jia Zhang, [Yimeng Liu](https://www.linkedin.com/in/yoyo-liu-023332219/), [Li Hao](https://howardli1984.github.io/), [Fang Wu](https://smiles724.github.io/), [Zhiwei Li](https://digbangbang.github.io/), [Yuxuan Liao](https://www.linkedin.com/in/yuxuan-liao021/), [Zehong Wang](https://zehong-wang.github.io/), [Zhiyuan Liu](https://acharkq.github.io/), [Zhenfei Yin](https://yinzhenfei.github.io/), [Li Yuan](https://yuanli2333.github.io/), [Philip Torr](https://scholar.google.com/citations?user=kPxa2w0AAAAJ&hl=en), [Huan Sun](https://u.osu.edu/ihudas/people/), [Xiangxiang Zeng](https://scholar.google.com/citations?user=B20HBMIAAAAJ&hl=en), [Mengdi Wang](https://scholar.google.com/citations?user=33yNvIgAAAAJ&hl=en), [Le Cong](https://scholar.google.com/citations?user=sfJIWdcAAAAJ&hl=en), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), [Xiangru Tang](https://xiangrutang.github.io/). \n\n**[ICML 2026](https://icml.cc/Conferences/2026)**.\n\n**[ICLR 2026 LIT](https://latent-implicit-thinking.github.io/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2602.07075"
@@ -102,6 +110,8 @@ enableRobotsTXT = true
 
     [[params.projects.items]]
       title = "Tower of Babel in Cross-Cultural Communication: A Case Study of #Give Me a Chinese Name# Dialogues During the “TikTok Refugees” Event"
+      selected = false
+      topics = ["LLMs", "AI&Human"]
       content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Zhibo Yang](https://orcid.org/0009-0006-9679-5101), [Jingyi Zhao](https://orcid.org/0009-0006-7355-5519), [Yujia Li](https://orcid.org/0009-0003-8846-8889), **Xinwu Ye**, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[ACM CHI 2026](https://chi2026.acm.org/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/html/2602.18549v1"
@@ -109,6 +119,8 @@ enableRobotsTXT = true
 
     [[params.projects.items]]
       title = "InfoAlign: A Human–AI Co-Creation System for Storytelling with Infographics"
+      selected = false
+      topics = ["AI&Human"]
       content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), **Xinwu Ye**, [Qianhui Li](https://orcid.org/0009-0006-8804-8130), [Verena Ingrid Prantl](https://dblp.org/pid/345/7956.html), [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), [Yuheng Zhao](https://zyh1222.github.io/), [Yun Wang](https://www.microsoft.com/en-us/research/people/wangyun/), [Siming Chen](http://simingchen.me/). \n\n**[ACM CHI 2026](https://chi2026.acm.org/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/html/2602.22901v1"
@@ -116,6 +128,8 @@ enableRobotsTXT = true
 
     [[params.projects.items]]
       title = "BC-Design: A Biochemistry-Aware Framework for Inverse Protein Design"
+      selected = true
+      topics = ["AI4Science"]
       content = "[Xiangru Tang](https://xiangrutang.github.io/)&#42;, **Xinwu Ye**&#42;, [Fang Wu](https://smiles724.github.io/)&#42;, [Yimeng Liu](https://www.linkedin.com/in/yoyo-liu-023332219/), [Anna Su](https://reflect.ucl.ac.uk/anna-su-scientific-research/), [Antonia Panescu](https://www.linkedin.com/in/antonia-panescu-489a82214/), [Guanlue Li](https://www.inf.uni-hamburg.de/en/inst/ab/ml/people/li.html), [Daniel Shao](https://scholar.google.com/citations?user=rtmmmfIAAAAJ), [Dong Xu](https://scholar.google.com/citations?user=xJeTtCoAAAAJ&hl=en), [Mark Gerstein](https://scholar.google.com/citations?user=YvjuUugAAAAJ&hl=en). \n\n**[ICML 2025 GenBio](https://genbio-workshop.github.io/2025/)**."
       [[params.projects.items.links]]
         url = "https://www.biorxiv.org/content/10.1101/2024.10.28.620755v3"
@@ -126,6 +140,8 @@ enableRobotsTXT = true
 
     [[params.projects.items]]
       title = "MMSciBench: Benchmarking Language Models on Chinese Multimodal Scientific Problems"
+      selected = true
+      topics = ["LLMs", "AI4Science"]
       content = "**Xinwu Ye**, [Chengfan Li](https://chengfanli.github.io/), [Siming Chen](http://simingchen.me/), Wei Wei, [Xiangru Tang](https://xiangrutang.github.io/). \n\n**[ACL 2025 Findings](https://aclanthology.org/volumes/2025.findings-acl/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/html/2503.01891v2"
@@ -139,6 +155,8 @@ enableRobotsTXT = true
         
     [[params.projects.items]]
       title = "GNNFairViz: Visual Analysis for Graph Neural Network Fairness"
+      selected = true
+      topics = ["AI&Human"]
       content = "**Xinwu Ye**, [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Erasmo Purificato](https://erasmopurif.com/), [Ludovico Boratto](https://aibd.unica.it/people/ludovico-boratto), [Michael Kamp](https://michaelkamp.org/), [Zengfeng Huang](https://zengfenghuang.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (2025)](https://www.computer.org/tvcg)**."
       [[params.projects.items.links]]
         url = "https://ieeexplore.ieee.org/abstract/document/10891209"
