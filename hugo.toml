@@ -38,7 +38,7 @@ enableRobotsTXT = true
     [params.navbar.menus]
       disableAbout = true # Disable About section
       disableExperience = true
-      disableEducation = false
+      disableEducation = true
       disableProjects = false
       disableAchievements = true
       disableContact = true
@@ -155,7 +155,7 @@ enableRobotsTXT = true
 
   # Education section
   [params.education]
-    enable = true
+    enable = false
     title = "Education"
     [[params.education.items]]
       title = "PhD in Computer Science"

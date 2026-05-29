@@ -243,7 +243,9 @@
                 <a href="#preprints">Preprints</a>
                 {{ end }}
                 <a href="#publications">Publications</a>
+                {{ if .Site.Params.education.enable }}
                 <a href="#education">Education</a>
+                {{ end }}
                 <a href="#professional-service">Professional Service</a>
             </div>
         </div>
@@ -328,6 +330,7 @@
         </div>
         {{ end }}
 
+        {{ if .Site.Params.education.enable }}
         <!-- Education section -->
         <h2 id="education">Education</h2>
         {{ range .Site.Params.education.items }}
@@ -340,6 +343,7 @@
             {{ end }}
             <p>{{ .date }} | {{ .content }}</p>
         </div>
+        {{ end }}
         {{ end }}
 
         <!-- Professional Service section -->
