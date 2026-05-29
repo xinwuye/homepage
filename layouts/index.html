@@ -239,7 +239,9 @@
             <a href="#" class="navbar-brand">Xinwu Ye</a>
             <div class="navbar-links">
                 <a href="#about">About</a>
+                {{ if .Site.Params.achievements.items }}
                 <a href="#preprints">Preprints</a>
+                {{ end }}
                 <a href="#publications">Publications</a>
                 <a href="#education">Education</a>
                 <a href="#professional-service">Professional Service</a>
@@ -280,6 +282,7 @@
             {{ end }}
         </div>
 
+        {{ if .Site.Params.achievements.items }}
         <!-- Preprints section -->
         <h2 id="preprints">Preprints</h2>
         {{ if .Site.Params.achievements.content }}
@@ -300,6 +303,7 @@
             </p>
             {{ end }}
         </div>
+        {{ end }}
         {{ end }}
 
         <!-- Publications section -->
