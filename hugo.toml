@@ -74,6 +74,9 @@ enableRobotsTXT = true
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2608.15181"
         name = "paper"
+      [[params.projects.items.links]]
+        url = "https://github.com/yxyuan-joy/Insurance-as-AI-Risk-Infrastructure"
+        name = "code"
 
     [[params.projects.items]]
       title = "FORGE: Fragment-Oriented Ranking and Generation for Context-Aware Molecular Optimization"
