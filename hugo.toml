@@ -70,7 +70,7 @@ enableRobotsTXT = true
       title = "Insurance as AI Risk Infrastructure: A Generative-Agent Simulation of AI Adoption"
       selected = true
       topics = ["LLMs", "AI&Human"]
-      content = "[Yixuan Yuan](https://arxiv.org/search/?query=Yixuan+Yuan&searchtype=author), [Dedai Wei](https://orcid.org/0009-0006-4523-3686), [Chudong Qian](https://arxiv.org/search/?query=Chudong+Qian&searchtype=author), [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Ziyue Lin](https://www.researchgate.net/scientific-contributions/Ziyue-Lin-2288305771), [Yuheng Zhao](https://zyh1222.github.io/), [He Cao](https://github.com/Ciaohe), [Erasmo Purificato](https://erasmopurif.com/), **Xinwu Ye**<sup>✉</sup>. \n\n**[AAMAS 2026 ASI](https://panosd.eu/asi2026/)**."
+      content = "[Yixuan Yuan](https://scholar.google.com/citations?user=RS-MJyYAAAAJ), [Dedai Wei](https://orcid.org/0009-0006-4523-3686), [Chudong Qian](https://arxiv.org/search/?query=Chudong+Qian&searchtype=author), [Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), [Ziyue Lin](https://scholar.google.com/citations?user=ilQXST3DOVYC), [Yuheng Zhao](https://zyh1222.github.io/), [He Cao](https://github.com/Ciaohe), [Erasmo Purificato](https://erasmopurif.com/), **Xinwu Ye**<sup>✉</sup>. \n\n**[AAMAS 2026 ASI](https://panosd.eu/asi2026/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2608.15181"
         name = "paper"
@@ -103,7 +103,7 @@ enableRobotsTXT = true
       title = "VidAnimator: User-Guided Stylized 3D Character Animation from Human Videos"
       selected = false
       topics = ["AI&Human"]
-      content = "**Xinwu Ye**&#42;, [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ)&#42;, [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), Shuhong Mei, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[ICML 2026 GSML](https://sites.google.com/view/globalsouthml-icml-26/)**."
+      content = "**Xinwu Ye**&#42;, [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ)&#42;, [Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), Shuhong Mei, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[ICML 2026 GSML](https://sites.google.com/view/globalsouthml-icml-26/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2508.01878"
         name = "paper"
@@ -124,7 +124,7 @@ enableRobotsTXT = true
       title = "Tower of Babel in Cross-Cultural Communication: A Case Study of #Give Me a Chinese Name# Dialogues During the “TikTok Refugees” Event"
       selected = false
       topics = ["LLMs", "AI&Human"]
-      content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Zhibo Yang](https://orcid.org/0009-0006-9679-5101), [Jingyi Zhao](https://orcid.org/0009-0006-7355-5519), [Yujia Li](https://orcid.org/0009-0003-8846-8889), **Xinwu Ye**, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[ACM CHI 2026](https://chi2026.acm.org/)**."
+      content = "[Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), [Zhibo Yang](https://orcid.org/0009-0006-9679-5101), [Jingyi Zhao](https://orcid.org/0009-0006-7355-5519), [Yujia Li](https://orcid.org/0009-0003-8846-8889), **Xinwu Ye**, [Xingyu Lan](https://olivialan.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[ACM CHI 2026](https://chi2026.acm.org/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/html/2602.18549v1"
         name = "paper"
@@ -133,7 +133,7 @@ enableRobotsTXT = true
       title = "InfoAlign: A Human–AI Co-Creation System for Storytelling with Infographics"
       selected = false
       topics = ["AI&Human"]
-      content = "[Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), **Xinwu Ye**, [Qianhui Li](https://orcid.org/0009-0006-8804-8130), [Verena Ingrid Prantl](https://dblp.org/pid/345/7956.html), [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), [Yuheng Zhao](https://zyh1222.github.io/), [Yun Wang](https://www.microsoft.com/en-us/research/people/wangyun/), [Siming Chen](http://simingchen.me/). \n\n**[ACM CHI 2026](https://chi2026.acm.org/)**."
+      content = "[Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), **Xinwu Ye**, [Qianhui Li](https://orcid.org/0009-0006-8804-8130), [Verena Ingrid Prantl](https://dblp.org/pid/345/7956.html), [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), [Yuheng Zhao](https://zyh1222.github.io/), [Yun Wang](https://www.microsoft.com/en-us/research/people/wangyun/), [Siming Chen](http://simingchen.me/). \n\n**[ACM CHI 2026](https://chi2026.acm.org/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/html/2602.22901v1"
         name = "paper"
@@ -169,7 +169,7 @@ enableRobotsTXT = true
       title = "GNNFairViz: Visual Analysis for Graph Neural Network Fairness"
       selected = true
       topics = ["AI&Human"]
-      content = "**Xinwu Ye**, [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Erasmo Purificato](https://erasmopurif.com/), [Ludovico Boratto](https://aibd.unica.it/people/ludovico-boratto), [Michael Kamp](https://michaelkamp.org/), [Zengfeng Huang](https://zengfenghuang.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (2025)](https://www.computer.org/tvcg)**."
+      content = "**Xinwu Ye**, [Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), [Erasmo Purificato](https://erasmopurif.com/), [Ludovico Boratto](https://aibd.unica.it/people/ludovico-boratto), [Michael Kamp](https://michaelkamp.org/), [Zengfeng Huang](https://zengfenghuang.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (2025)](https://www.computer.org/tvcg)**."
       [[params.projects.items.links]]
         url = "https://ieeexplore.ieee.org/abstract/document/10891209"
         name = "paper"
