@@ -67,6 +67,15 @@ enableRobotsTXT = true
     content = "* represents equal contribution and co-first authorship. ✉ represents corresponding author."
 
     [[params.projects.items]]
+      title = "Insurance as AI Risk Infrastructure: A Generative-Agent Simulation of AI Adoption"
+      selected = true
+      topics = ["LLMs", "AI&Human"]
+      content = "[Yixuan Yuan](https://arxiv.org/search/?query=Yixuan+Yuan&searchtype=author), [Dedai Wei](https://orcid.org/0009-0006-4523-3686), [Chudong Qian](https://arxiv.org/search/?query=Chudong+Qian&searchtype=author), [Jielin Feng](https://www.researchgate.net/scientific-contributions/Jielin-Feng-2258637525), [Ziyue Lin](https://www.researchgate.net/scientific-contributions/Ziyue-Lin-2288305771), [Yuheng Zhao](https://zyh1222.github.io/), [He Cao](https://github.com/Ciaohe), [Erasmo Purificato](https://erasmopurif.com/), **Xinwu Ye**<sup>✉</sup>. \n\n**[AAMAS 2026 ASI](https://panosd.eu/asi2026/)**."
+      [[params.projects.items.links]]
+        url = "https://arxiv.org/abs/2608.15181"
+        name = "paper"
+
+    [[params.projects.items]]
       title = "FORGE: Fragment-Oriented Ranking and Generation for Context-Aware Molecular Optimization"
       selected = true
       topics = ["LLMs", "AI4Science"]
