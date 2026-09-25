@@ -67,6 +67,15 @@ enableRobotsTXT = true
     content = "* represents equal contribution and co-first authorship. ✉ represents corresponding author."
 
     [[params.projects.items]]
+      title = "Gen-lyph: A Human-AI Collaboration System for Creating Figurative Glyph-Based Visualizations"
+      selected = false
+      topics = ["AI&Human"]
+      content = "[Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), [Xuan Chen](https://orcid.org/0000-0001-9967-3974), **Xinwu Ye**, [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), Zhuoheng Li, [Laura Koesten](https://laurakoesten.github.io/), [Xingyu Lan](https://olivialan.github.io/), [Torsten Möller](https://ucrisportal.univie.ac.at/en/persons/torsten-m%C3%B6ller/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (2026)](https://www.computer.org/tvcg)**."
+      [[params.projects.items.links]]
+        url = "https://doi.org/10.1109/TVCG.2026.3730177"
+        name = "paper"
+
+    [[params.projects.items]]
       title = "Insurance as AI Risk Infrastructure: A Generative-Agent Simulation of AI Adoption"
       selected = true
       topics = ["LLMs", "AI&Human"]
@@ -91,7 +100,7 @@ enableRobotsTXT = true
       title = "Pushing Biomolecular Utility-Diversity Frontiers with Supergroup Relative Policy Optimization"
       selected = true
       topics = ["AI4Science"]
-      content = "**Xinwu Ye**&#42;, [He Cao](https://github.com/Ciaohe)&#42;, [Hao Li](https://howardli1984.github.io/), [Bin Feng](https://openreview.net/profile?id=~Bin_Feng4), [Zijing Liu](https://openreview.net/profile?id=~Zijing_Liu1), [Xiangru Tang](https://xiangrutang.github.io/), [Yu Li](https://yu-li.github.io/), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en). \n\n**[ICML 2026 GenBio](https://genbio-workshop.github.io/2026/)**."
+      content = "**Xinwu Ye**&#42;, [He Cao](https://github.com/Ciaohe)&#42;, [Hao Li](https://howardli1984.github.io/), [Bin Feng](https://openreview.net/profile?id=~Bin_Feng4), [Zijing Liu](https://openreview.net/profile?id=~Zijing_Liu1), [Xiangru Tang](https://xiangrutang.github.io/), [Yu Li](https://yu-li.github.io/), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en). \n\n**[NeurIPS 2026](https://neurips.cc/)**.\n\n**[ICML 2026 GenBio](https://genbio-workshop.github.io/2026/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2605.08659"
         name = "paper"
