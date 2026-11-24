@@ -70,7 +70,7 @@ enableRobotsTXT = true
       title = "Gen-lyph: A Human-AI Collaboration System for Creating Figurative Glyph-Based Visualizations"
       selected = false
       topics = ["AI&Human"]
-      content = "[Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), [Xuan Chen](https://orcid.org/0000-0001-9967-3974), **Xinwu Ye**, [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), Zhuoheng Li, [Laura Koesten](https://laurakoesten.github.io/), [Xingyu Lan](https://olivialan.github.io/), [Torsten Möller](https://ucrisportal.univie.ac.at/en/persons/torsten-m%C3%B6ller/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (2026)](https://www.computer.org/tvcg)**."
+      content = "[Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), [Xuan Chen](https://orcid.org/0000-0001-9967-3974), **Xinwu Ye**, [Jun-Hsiang Yao](https://scholar.google.com/citations?user=NbqwkFcAAAAJ), Zhuoheng Li, [Laura Koesten](https://laurakoesten.github.io/), [Xingyu Lan](https://olivialan.github.io/), [Torsten Möller](https://ucrisportal.univie.ac.at/en/persons/torsten-m%C3%B6ller/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (TVCG) (2026)](https://www.computer.org/tvcg)**."
       [[params.projects.items.links]]
         url = "https://doi.org/10.1109/TVCG.2026.3730177"
         name = "paper"
@@ -91,7 +91,7 @@ enableRobotsTXT = true
       title = "FORGE: Fragment-Oriented Ranking and Generation for Context-Aware Molecular Optimization"
       selected = true
       topics = ["LLMs", "AI4Science"]
-      content = "[Qingchuan Zhang](https://scholar.google.com/citations?hl=zh-CN&user=aP4s6MkAAAAJ), [He Cao](https://github.com/Ciaohe), [Hao Li](https://howardli1984.github.io/), [Daniel Shao](https://scholar.google.com/citations?user=rtmmmfIAAAAJ), [Zhiyuan Liu](https://acharkq.github.io/), [Shihang Wang](https://shihang-wang-58.github.io/), [Shufang Xie](https://openreview.net/profile?id=~Shufang_Xie1), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), **Xinwu Ye**<sup>✉</sup>. \n\n**[ICML 2026 GenBio](https://genbio-workshop.github.io/2026/)**."
+      content = "[Qingchuan Zhang](https://scholar.google.com/citations?hl=zh-CN&user=aP4s6MkAAAAJ), [He Cao](https://github.com/Ciaohe), [Hao Li](https://howardli1984.github.io/), [Daniel Shao](https://scholar.google.com/citations?user=rtmmmfIAAAAJ), [Zhiyuan Liu](https://acharkq.github.io/), [Shihang Wang](https://shihang-wang-58.github.io/), [Shufang Xie](https://openreview.net/profile?id=~Shufang_Xie1), [Shenghua Gao](https://scholar.google.com/citations?user=fe-1v0MAAAAJ&hl=en), **Xinwu Ye**<sup>✉</sup>. \n\n**[Transactions on Machine Learning Research (TMLR) (2026)](https://jmlr.org/tmlr/)**.\n\n**[ICML 2026 GenBio](https://genbio-workshop.github.io/2026/)**."
       [[params.projects.items.links]]
         url = "https://arxiv.org/abs/2605.10230"
         name = "paper"
@@ -178,7 +178,7 @@ enableRobotsTXT = true
       title = "GNNFairViz: Visual Analysis for Graph Neural Network Fairness"
       selected = true
       topics = ["AI&Human"]
-      content = "**Xinwu Ye**, [Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), [Erasmo Purificato](https://erasmopurif.com/), [Ludovico Boratto](https://aibd.unica.it/people/ludovico-boratto), [Michael Kamp](https://michaelkamp.org/), [Zengfeng Huang](https://zengfenghuang.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (2025)](https://www.computer.org/tvcg)**."
+      content = "**Xinwu Ye**, [Jielin Feng](https://scholar.google.com/citations?user=m4P-8NMAAAAJ), [Erasmo Purificato](https://erasmopurif.com/), [Ludovico Boratto](https://aibd.unica.it/people/ludovico-boratto), [Michael Kamp](https://michaelkamp.org/), [Zengfeng Huang](https://zengfenghuang.github.io/), [Siming Chen](http://simingchen.me/). \n\n**[IEEE Transactions on Visualization and Computer Graphics (TVCG) (2025)](https://www.computer.org/tvcg)**."
       [[params.projects.items.links]]
         url = "https://ieeexplore.ieee.org/abstract/document/10891209"
         name = "paper"
